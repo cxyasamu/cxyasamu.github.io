@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>js字符串 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="字符串 String String 对象用于处理文本(字符串), 一个字符串可以使用双引号或单引号表示  创建字符串的方法  字面量    1let str &#x3D; &quot;字符串&quot;;    new 操作符 结合 String 方法    1let str &#x3D; new String(&quot;字符串&quot;);  获取字符串的值  通过‘[索引]’ 获取字符串中某个字符, , 超出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js字符串">
+<meta property="og:url" content="http://example.com/2023/10/08/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="字符串 String String 对象用于处理文本(字符串), 一个字符串可以使用双引号或单引号表示  创建字符串的方法  字面量    1let str &#x3D; &quot;字符串&quot;;    new 操作符 结合 String 方法    1let str &#x3D; new String(&quot;字符串&quot;);  获取字符串的值  通过‘[索引]’ 获取字符串中某个字符, , 超出">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-08T04:37:20.000Z">
+<meta property="article:modified_time" content="2023-10-13T04:19:22.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="js ECMA">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-js入门-ECMA/js字符串" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/08/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="article-date">
+  <time class="dt-published" datetime="2023-10-08T04:37:20.000Z" itemprop="datePublished">2023-10-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      js字符串
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="字符串-String"><a href="#字符串-String" class="headerlink" title="字符串 String"></a>字符串 String</h2><blockquote>
+<p>String 对象用于处理文本(字符串), 一个字符串可以使用双引号或单引号表示</p>
+</blockquote>
+<h3 id="创建字符串的方法"><a href="#创建字符串的方法" class="headerlink" title="创建字符串的方法"></a>创建字符串的方法</h3><ul>
+<li><ol>
+<li>字面量</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;字符串&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><ol start="2">
+<li>new 操作符 结合 String 方法</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;字符串&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取字符串的值"><a href="#获取字符串的值" class="headerlink" title="获取字符串的值"></a>获取字符串的值</h3><ul>
+<li><ol>
+<li>通过‘[索引]’ 获取字符串中某个字符, , 超出范围返回 undefined</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>charAt(索引) 获取字符串中某个字符(字符串自带的方法), 超出范围返回 “” 字符串</li>
+</ol>
+</li>
+</ul>
+<h3 id="字符串的方法"><a href="#字符串的方法" class="headerlink" title="字符串的方法"></a>字符串的方法</h3><ul>
+<li>concat</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    连接多个字符串, 并返回一个新的完整字符串</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>indexOf(searchValue, startIndex)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    定义字符串中某一个指定字符首次出现的位置</span><br><span class="line">    (返回查找字符的下标, 查找不到返回-1)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    第一参数  查找的字符</span><br><span class="line">    第二参数  开始查找下标(可选, 默认字符串首位开始), 小于0的时候, 默认从0下标开始</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>lastIndexOf(searchValue, startIndex)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    定义字符串中某一个指定字符末尾出现的位置</span><br><span class="line">    (返回查找字符的下标, 查找不到返回-1)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    第一参数  查找的字符</span><br><span class="line">    第二参数  开始查找下标(可选, 默认字符串首位开始), 小于0的时候, 默认从0下标开始</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>replace()</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    字符串中某些字符实现替换操作</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    第一个参数  需要替换的值(支持正则)</span><br><span class="line">    第二个参数  替换新值</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>repeat(count)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    返回一个新字符串, 表示将当前字符串重复n次</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    count 表示重复次数, 默认0次</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>toUpperCase、toLowerCase</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    toUpperCase字母转大写、toLowerCase字母转小写 (转换函数), 返回新的字符串</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>slice</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    可以从字符串中截取指定范围的内容, 并返回新的字符串</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    第一个参数  开始下标</span><br><span class="line">    第二个参数  结束下标(不包含)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>substring</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    提取字符串中两个指定索引号之前的字符</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    第一个参数  开始下标</span><br><span class="line">    第二个参数  结束下标(不包含, 不支持负数, 负数会统一视为0)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>substr</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    提取字符串中两个指定索引号之前的字符</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    第一个参数  开始下标</span><br><span class="line">    第二个参数  截取的长度</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>split</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    将字符串转数组 (以规定的格式分割成数组)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    第一个参数  规定的格式(匹配字符里的内容)</span><br><span class="line">    第二个参数  分割的长度(不填默认会将字符串全部分割成数组)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/10/08/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AD%97%E7%AC%A6%E4%B8%B2/" data-id="clo32argf001qt0wb28pd2ecj" data-title="js字符串" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          js对象
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E6%95%B0%E7%BB%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js数组</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

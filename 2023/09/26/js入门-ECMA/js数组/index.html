@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>js数组 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="数组 Array 数组对象 是使用单独的变量名来存储一系列的值，每个值称为当前数组的成员，第一位值的索引值(下标值)为 0  创建数组 new 操作符好 (Array 构造函数，实例化对象)  12&#x2F;&#x2F; 如果Array函数接受的是一个数字，数组成员变成n个empty空属性let arr &#x3D; new Array();   字面量  1let arr &#x3D; [];  访问数组成员 使用[索引值]的方法去">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js数组">
+<meta property="og:url" content="http://example.com/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E6%95%B0%E7%BB%84/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数组 Array 数组对象 是使用单独的变量名来存储一系列的值，每个值称为当前数组的成员，第一位值的索引值(下标值)为 0  创建数组 new 操作符好 (Array 构造函数，实例化对象)  12&#x2F;&#x2F; 如果Array函数接受的是一个数字，数组成员变成n个empty空属性let arr &#x3D; new Array();   字面量  1let arr &#x3D; [];  访问数组成员 使用[索引值]的方法去">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-26T08:37:20.000Z">
+<meta property="article:modified_time" content="2023-10-13T04:19:12.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="js ECMA">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-js入门-ECMA/js数组" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E6%95%B0%E7%BB%84/" class="article-date">
+  <time class="dt-published" datetime="2023-09-26T08:37:20.000Z" itemprop="datePublished">2023-09-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      js数组
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="数组-Array"><a href="#数组-Array" class="headerlink" title="数组 Array"></a>数组 Array</h2><blockquote>
+<p>数组对象 是使用单独的变量名来存储一系列的值，每个值称为当前数组的成员，第一位值的索引值(下标值)为 0</p>
+</blockquote>
+<h3 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h3><ul>
+<li>new 操作符好 (Array 构造函数，实例化对象)</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 如果Array函数接受的是一个数字，数组成员变成n个empty空属性</span></span><br><span class="line"><span class="keyword">let</span> arr = <span class="keyword">new</span> <span class="title class_">Array</span>();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>字面量</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [];</span><br></pre></td></tr></table></figure>
+
+<h3 id="访问数组成员"><a href="#访问数组成员" class="headerlink" title="访问数组成员"></a>访问数组成员</h3><blockquote>
+<p>使用[索引值]的方法去访问数组成员，如果访问的成员不存在即返回 undefined，[索引值]也可以做赋值操作(将新的值赋给对应下标的数组成员)</p>
+</blockquote>
+<h3 id="检测数组-是否为数组"><a href="#检测数组-是否为数组" class="headerlink" title="检测数组 (是否为数组)"></a>检测数组 (是否为数组)</h3><ul>
+<li>isArray 检测是否为数组(返回布尔值)</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Array</span>.<span class="title function_">isArray</span>(检测的值);</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组的方法"><a href="#数组的方法" class="headerlink" title="数组的方法"></a>数组的方法</h3><ul>
+<li>concat(a1,a2,…)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    连接(合并)多个数组，并且返回的是新数组(不会影响原数组)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>join()</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    将数组转换成字符串</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    该方法不会影响原数组，而是将转换之后的字符串返回;</span><br><span class="line"></span><br><span class="line">使用:</span><br><span class="line">    在join()中可以指定一个字符串作为参数(拼接参数)，这个字符串会成为数组元素中的连接符号，默认以&quot;,&quot;连接</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>reverse()</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    翻转数组的元素顺序</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    该方法会修改原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>slice(startIndex, endIndex)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    截取数组指定范围的元素</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    该方法不会修改原数组</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    startIndex:开始下标(必填)</span><br><span class="line">    (负数从数组的末端开始，正数从数组的头部开始)</span><br><span class="line"></span><br><span class="line">    endIndex:结束下标，范围不包括结束下标(选填)</span><br><span class="line"></span><br><span class="line">    开始下标大于结束下标，取不到值 返回[]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>splice(arg1, arg2, arg3)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    获取/删除/添加数组指定范围的值</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    arg1:开始下标</span><br><span class="line">    arg2:规定的截取范围的长度(个数)，设置0不删除元素</span><br><span class="line">    arg3:替换元素(选填),删除、添加、修改</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    该方法会修改原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>IndexOf(arg1, arg2)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    数组第一个值开始往下找，返回查找值的下标，查找不到则返回-1(根据值去找下标)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    arg1:在数组中需要查找的值(必填)</span><br><span class="line">    arg2:开始查找的下标(选填,默认从下标0开始找)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>lastIndexOf(arg1, arg2)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    数组最后一个值开始往上找，返回查找值的下标，查找不到则返回-1(根据值去找下标)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    arg1:在数组中需要查找的值(必填)</span><br><span class="line">    arg2:开始查找的下标(选填,默认从数组的末端开始找)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>includes</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    判断数组是否包含指定的值(返回布尔值)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    arg1:查找的值</span><br><span class="line">    arg2:开始查找的下标(选填，默认从数组的第一个开始找)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>push、pop、shift、unshift</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">push(arg1, arg2,...)</span><br><span class="line">    功能:</span><br><span class="line">        向数组末端添加数组成员，返回数组的新长度</span><br><span class="line"></span><br><span class="line">    参数:</span><br><span class="line">        添加的数组成员(多个可以使用&#x27;,&#x27;连接)</span><br><span class="line"></span><br><span class="line">pop</span><br><span class="line">    功能:</span><br><span class="line">        向数组末端删除一个元素，返回被删除的元素</span><br><span class="line"></span><br><span class="line">shift</span><br><span class="line">    功能:</span><br><span class="line">        移除数组头部第一个元素并且返回删除的元素</span><br><span class="line"></span><br><span class="line">unshift(arg1, arg2,...)</span><br><span class="line">    功能:</span><br><span class="line">       在数组的头部添加一个元素，返回新数组的长度</span><br><span class="line"></span><br><span class="line">    参数:</span><br><span class="line">        添加多个数组成员(多个可以使用&#x27;,&#x27;连接)</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组的遍历方法"><a href="#数组的遍历方法" class="headerlink" title="数组的遍历方法"></a>数组的遍历方法</h3><blockquote>
+<p>计算机的词汇(循环、遍历、迭代、递归)</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">循环(loop):根据条件重复执行一段代码;</span><br><span class="line"></span><br><span class="line">遍历(traversal):指按照一定的规则访问树状结构中的每一个节点，并且每一个节点只会访问一次;</span><br><span class="line"></span><br><span class="line">迭代(iterate):指按照某种顺序逐个访问列表中的每一项;</span><br><span class="line"></span><br><span class="line">递归(recursion):指一个函数不断调用自身的行为</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>foreach(cb)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    对数组的每一个元素提供执行一次的函数，没有返回值(return undefined)，不能使用break和continue，除非在执行过程中出现了报错才可以中断</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    cb:回调函数作为参数传递</span><br><span class="line">    回调函数会存在三个参数</span><br><span class="line">    第一个参数(可选):正在处理的元素(当前遍历的元素)</span><br><span class="line">    第二个参数(可选):正在处理的元素的索引(当前遍历的下标)</span><br><span class="line">    第三个参数(可选):正在处理的数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>map(cb)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    通过指定函数处理数组每一个元素，并返回处理之后的数组</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    cb:回调函数作为参数传递</span><br><span class="line">    回调函数会存在三个参数</span><br><span class="line">    第一个参数(可选):正在处理的元素(当前遍历的元素)</span><br><span class="line">    第二个参数(可选):正在处理的元素的索引(当前遍历的下标)</span><br><span class="line">    第三个参数(可选):正在处理的数组</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    map方法不会对空数组进行检测</span><br><span class="line">    map方法返回新的数组，不会操作原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>filter(cb)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    创建一个新数组，数组里面的元素都是过滤之后符合条件的元素(不会对元素进行操作)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    cb:回调函数作为参数传递</span><br><span class="line">    回调函数会存在三个参数</span><br><span class="line">    第一个参数(可选):正在处理的元素(当前遍历的元素)</span><br><span class="line">    第二个参数(可选):正在处理的元素的索引(当前遍历的下标)</span><br><span class="line">    第三个参数(可选):正在处理的数组</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    不会对空数组进行检测</span><br><span class="line">    返回新的数组，不会操作原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>every(cb)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    返回的是一个布尔值，成立条件是每一个元素成立就会返回true，否则返回false(所有条件都需要成立才会返回true)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    cb:回调函数作为参数传递</span><br><span class="line">    回调函数会存在三个参数</span><br><span class="line">    第一个参数(可选):正在处理的元素(当前遍历的元素)</span><br><span class="line">    第二个参数(可选):正在处理的元素的索引(当前遍历的下标)</span><br><span class="line">    第三个参数(可选):正在处理的数组</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    不会对空数组进行检测</span><br><span class="line">    返回新的数组，不会操作原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>some(cb)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    返回一个布尔值，成立的条件是是要有一个元素成立就会返回true，否则返回false</span><br><span class="line">    (如果是查找结果返回true,中断这次遍历)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    cb:回调函数作为参数传递</span><br><span class="line">    回调函数会存在三个参数</span><br><span class="line">    第一个参数(可选):正在处理的元素(当前遍历的元素)</span><br><span class="line">    第二个参数(可选):正在处理的元素的索引(当前遍历的下标)</span><br><span class="line">    第三个参数(可选):正在处理的数组</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">    不会对空数组进行检测</span><br><span class="line">    返回新的数组，不会操作原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>reduce(cb,init)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    接收一个函数作为累加器，数组中每一个值(从左到右)开始缩减，最终会开始为一个值(累加的值)</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    cb:回调函数作为参数传递</span><br><span class="line">    回调函数会存在四个参数</span><br><span class="line">    第一个参数(必填):初始值，每次遍历计算后的返回值</span><br><span class="line">    第二个参数(可选):正在处理的元素(当前遍历的元素)</span><br><span class="line">    第三个参数(可选):正在处理的元素的索引(当前遍历的下标)</span><br><span class="line">    第四个参数(可选):正在处理的数组</span><br><span class="line"></span><br><span class="line">    init(可选):传递给cb函数的初始值</span><br><span class="line">注意:</span><br><span class="line">    不会对空数组进行检测</span><br><span class="line">    返回新的数组，不会操作原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>sort()</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    对数组的元素进行排序</span><br><span class="line"></span><br><span class="line">参数:</span><br><span class="line">    cb(可选)，规定排序顺序</span><br><span class="line"></span><br><span class="line">排序规则:</span><br><span class="line">    如果调用sort函数没传入cb回调函数，数组成员将会按照unicode编码格式进行排序</span><br><span class="line"></span><br><span class="line">    大小排序</span><br><span class="line">    数字</span><br><span class="line">    小写字母</span><br><span class="line">    大写字母</span><br><span class="line">    文字</span><br><span class="line">注意:</span><br><span class="line">    会操作原数组</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>fill()</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    对数组的值进行修改</span><br><span class="line">参数:</span><br><span class="line">    第一个参数(必填):修改后的值</span><br><span class="line">    第二个参数(可选):开始的下标</span><br><span class="line">    第三个参数(可选):结束的下标</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>find()</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    返回数组中满足提供的测试函数的第一个元素的值,否则返回undefined</span><br><span class="line">参数:</span><br><span class="line">    第一个参数(必填):修改后的值</span><br><span class="line">    第二个参数(可选):开始的下标</span><br><span class="line">    第三个参数(可选):结束的下标</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>findIndex()</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    返回数组中满足提供的测试函数的第一个元素的索引,否则返回-1</span><br><span class="line">参数:</span><br><span class="line">    第一个参数(必填):修改后的值</span><br><span class="line">    第二个参数(可选):开始的下标</span><br><span class="line">    第三个参数(可选):结束的下标</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E6%95%B0%E7%BB%84/" data-id="clo32argj0020t0wb8ppd7gjp" data-title="js数组" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/10/08/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AD%97%E7%AC%A6%E4%B8%B2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          js字符串
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E9%A2%84%E7%BC%96%E8%AF%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js的预编译</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

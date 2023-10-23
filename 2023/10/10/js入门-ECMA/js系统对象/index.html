@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>js系统对象 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="系统对象(js 自带的对象)Date 对象(日期对象) 用于创建(处理)日期时间  123456789101112语法:    1.不填参数    new Date();    2.填写时间戳    Date.now() 获取当前时间戳    new Date(时间戳);    3.填写具体日期    new Date(&quot;2023 10 10 00:00:00&quot;)    new">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js系统对象">
+<meta property="og:url" content="http://example.com/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="系统对象(js 自带的对象)Date 对象(日期对象) 用于创建(处理)日期时间  123456789101112语法:    1.不填参数    new Date();    2.填写时间戳    Date.now() 获取当前时间戳    new Date(时间戳);    3.填写具体日期    new Date(&quot;2023 10 10 00:00:00&quot;)    new">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-10T04:20:20.000Z">
+<meta property="article:modified_time" content="2023-10-13T04:19:16.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="js ECMA">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-js入门-ECMA/js系统对象" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/" class="article-date">
+  <time class="dt-published" datetime="2023-10-10T04:20:20.000Z" itemprop="datePublished">2023-10-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      js系统对象
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="系统对象-js-自带的对象"><a href="#系统对象-js-自带的对象" class="headerlink" title="系统对象(js 自带的对象)"></a>系统对象(js 自带的对象)</h2><h3 id="Date-对象-日期对象"><a href="#Date-对象-日期对象" class="headerlink" title="Date 对象(日期对象)"></a>Date 对象(日期对象)</h3><blockquote>
+<p>用于创建(处理)日期时间</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">语法:</span><br><span class="line">    1.不填参数</span><br><span class="line">    new Date();</span><br><span class="line"></span><br><span class="line">    2.填写时间戳</span><br><span class="line">    Date.now() 获取当前时间戳</span><br><span class="line">    new Date(时间戳);</span><br><span class="line"></span><br><span class="line">    3.填写具体日期</span><br><span class="line">    new Date(&quot;2023 10 10 00:00:00&quot;)</span><br><span class="line">    new Date(&quot;2023, 10, 10&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Date-对象的方法"><a href="#Date-对象的方法" class="headerlink" title="Date 对象的方法"></a>Date 对象的方法</h3><ul>
+<li><p>日期对象.getFullYear() 获取年份</p>
+</li>
+<li><p>getMonth() 获取月份(从 0 开始,0 代表 1 月份，11 代表 12 月份)</p>
+</li>
+<li><p>getDate() 获取当前日(从 1 开始)</p>
+</li>
+<li><p>getDay() 获取当前星期(从 0 开始,0 表示星期日)</p>
+</li>
+<li><p>getHours() 获取小时</p>
+</li>
+<li><p>getMinutes() 获取分钟</p>
+</li>
+<li><p>getSeconds() 获取秒数</p>
+</li>
+<li><p>getTime() 获取毫秒</p>
+</li>
+<li><p>toLocaleString()</p>
+</li>
+<li><p>toLocaleDateString() 当地日期转字符串</p>
+</li>
+<li><p>toLocaleTimeString() 当地时间转字符串</p>
+</li>
+<li><p>toUTCString()</p>
+</li>
+</ul>
+<h3 id="window-的方法"><a href="#window-的方法" class="headerlink" title="window 的方法"></a>window 的方法</h3><ul>
+<li><p>alert() 消息提示框</p>
+</li>
+<li><p>prompt() 输入框</p>
+</li>
+</ul>
+<h4 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h4><blockquote>
+<p>定时器会返回一个编号,编号时浏览器提供的，在浏览器的编号池中(预留编号位置),主要是为了让每个定时器都有自己独一无二的编号</p>
+</blockquote>
+<ul>
+<li>setTimeOut 延时定时器(一次定时器)</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    在指定的毫秒数内执行一次函数</span><br><span class="line"></span><br><span class="line">语法:</span><br><span class="line">    setTimeOut(function()&#123;</span><br><span class="line">        执行代码区域</span><br><span class="line">    &#125;,毫秒/ms)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>clearTimeOut,clearInterval 清除定时器</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    清除指定定时器编号延时定时器</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>setInterval 重复定时器(多次定时器)</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    在指定的毫秒数内重复执行同一个函数,如果不是手动停止/关闭浏览器，永远都是一直执行下去</span><br><span class="line"></span><br><span class="line">语法:</span><br><span class="line">    setInterval(function()&#123;</span><br><span class="line">        执行代码区域</span><br><span class="line">    &#125;,毫秒/ms)</span><br></pre></td></tr></table></figure>
+
+<h3 id="数学对象-Math"><a href="#数学对象-Math" class="headerlink" title="数学对象 Math"></a>数学对象 Math</h3><h4 id="Math-的常用方法"><a href="#Math-的常用方法" class="headerlink" title="Math 的常用方法"></a>Math 的常用方法</h4><ul>
+<li><p>Math.random()*arg 默认生成[0,1)的随机数(包括 0,不包括 1)，arg 值生成的随机数范围[0,arg)<br>功能:生成随机数</p>
+</li>
+<li><p>Math.round()<br>功能:四舍五入</p>
+</li>
+<li><p>Math.ceil()<br>功能:小数点向上取整</p>
+</li>
+<li><p>Math.floor()<br>功能:小数点向下取整</p>
+</li>
+<li><p>Math.abs()<br>功能:求绝对值</p>
+</li>
+<li><p>Math.max(num1, …num2)<br>功能:返回最大值,参数要求两个以上</p>
+</li>
+<li><p>Math.min(num1, …num2)<br>功能:返回最小值,参数要求两个以上</p>
+</li>
+</ul>
+<h4 id="范围公式"><a href="#范围公式" class="headerlink" title="范围公式"></a>范围公式</h4><ul>
+<li><p>[n,m]</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * (max - min + <span class="number">1</span>) + min);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>[n,m)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * (max - min) + min);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>(n,m)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * (max - min - <span class="number">1</span>) + min + <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>(n,m]</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * (max - min) + min + <span class="number">1</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/" data-id="clo32argp002ct0wbezzk1514" data-title="js系统对象" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          js堆和栈
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js对象</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

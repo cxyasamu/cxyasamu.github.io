@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>预处理器 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="预处理器 css 并不是一个编程语言(编程语言:判断、循环、变量、函数)，预处理器专门针对 css 研发的一种编程语言，进行 css 的样式设计，最后在编译成 css 文件，常见的预处理器 sass、less  sass scss 本来就是 sass 的一个升级版，可以看作像 css3 其实就是 css 升级版的意思，scss 是 sass 的第三代语法，scss 可以使用判断、循环、变量、函数等">
+<meta property="og:type" content="article">
+<meta property="og:title" content="预处理器">
+<meta property="og:url" content="http://example.com/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="预处理器 css 并不是一个编程语言(编程语言:判断、循环、变量、函数)，预处理器专门针对 css 研发的一种编程语言，进行 css 的样式设计，最后在编译成 css 文件，常见的预处理器 sass、less  sass scss 本来就是 sass 的一个升级版，可以看作像 css3 其实就是 css 升级版的意思，scss 是 sass 的第三代语法，scss 可以使用判断、循环、变量、函数等">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-04T06:35:30.000Z">
+<meta property="article:modified_time" content="2023-09-06T02:00:34.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="css">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-css进阶/预处理器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" class="article-date">
+  <time class="dt-published" datetime="2023-09-04T06:35:30.000Z" itemprop="datePublished">2023-09-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      预处理器
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="预处理器"><a href="#预处理器" class="headerlink" title="预处理器"></a>预处理器</h2><blockquote>
+<p>css 并不是一个编程语言(编程语言:判断、循环、变量、函数)，预处理器专门针对 css 研发的一种编程语言，进行 css 的样式设计，最后在编译成 css 文件，常见的预处理器 sass、less</p>
+</blockquote>
+<h3 id="sass"><a href="#sass" class="headerlink" title="sass"></a>sass</h3><blockquote>
+<p>scss 本来就是 sass 的一个升级版，可以看作像 css3 其实就是 css 升级版的意思，scss 是 sass 的第三代语法，scss 可以使用判断、循环、变量、函数等操作，文件的后缀名为 scss(编译之前)，最后编译出去的文件是 css 文件(编译之后)</p>
+</blockquote>
+<h3 id="单文件编译"><a href="#单文件编译" class="headerlink" title="单文件编译"></a>单文件编译</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sass --watch ./scss/index.scss:./css/index.css</span><br><span class="line"></span><br><span class="line">||</span><br><span class="line"></span><br><span class="line">sass 命令 监听 编译之前文件地址:编译之后文件地址</span><br></pre></td></tr></table></figure>
+
+<h3 id="map-和-sass-cache-文件的作用"><a href="#map-和-sass-cache-文件的作用" class="headerlink" title=".map 和 .sass-cache 文件的作用"></a>.map 和 .sass-cache 文件的作用</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.map</span><br><span class="line">    css文件内容导航到对应的scss文件位置，方便开发人员定位到scss的修改位置</span><br><span class="line"></span><br><span class="line">.sass-cache</span><br><span class="line">    缓存分析文档/文件，在不修改的情况下，不需要编译整个scss文件(不再编译scss)，除非修改内容</span><br></pre></td></tr></table></figure>
+
+<h3 id="多文件编译"><a href="#多文件编译" class="headerlink" title="多文件编译"></a>多文件编译</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sass --watch .scss:./css</span><br><span class="line">||</span><br><span class="line">sass命令 监听命令 编译前文件夹路径:编译后文件夹路径</span><br></pre></td></tr></table></figure>
+
+<h3 id="导入其他样式-提公共部分、去除默认样式"><a href="#导入其他样式-提公共部分、去除默认样式" class="headerlink" title="导入其他样式(提公共部分、去除默认样式)"></a>导入其他样式(提公共部分、去除默认样式)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import 需要导入的scss路径;</span><br></pre></td></tr></table></figure>
+
+<h3 id="忽略编译-不需要编译成-css-文件"><a href="#忽略编译-不需要编译成-css-文件" class="headerlink" title="忽略编译(不需要编译成 css 文件)"></a>忽略编译(不需要编译成 css 文件)</h3><blockquote>
+<p>在 scss 文件名前面加 下划线</p>
+</blockquote>
+<h3 id="scss-的语法"><a href="#scss-的语法" class="headerlink" title="scss 的语法"></a>scss 的语法</h3><h4 id="变量-scss-所有变量以-符号开头"><a href="#变量-scss-所有变量以-符号开头" class="headerlink" title="变量(scss 所有变量以$ 符号开头)"></a>变量(scss 所有变量以$ 符号开头)</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义变量</span></span><br><span class="line"><span class="variable">$w</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">//使用变量</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$w</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">120px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$w</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="comment">/* 元素嵌套 */</span></span><br><span class="line">  <span class="selector-tag">header</span> &#123;</span><br><span class="line">    <span class="selector-tag">p</span> &#123;</span><br><span class="line">      <span class="comment">/* css属性嵌套  font-size font-weight*/</span></span><br><span class="line">      <span class="attribute">font</span>: &#123;</span><br><span class="line">        size: <span class="number">12px</span>;</span><br><span class="line">        weight: <span class="number">600</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">footer</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="继承-extend"><a href="#继承-extend" class="headerlink" title="继承(@extend)"></a>继承(@extend)</h4><blockquote>
+<p>继承另一个选择器的样式(复用样式)</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将要复用的选择器</span></span><br><span class="line"><span class="selector-class">.com</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="comment">//@extend 选择器</span></span><br><span class="line">  <span class="keyword">@extend</span> .com;</span><br><span class="line">  <span class="comment">//@extend 其他选择器</span></span><br><span class="line">  <span class="comment">//···</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bolder;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="父选择器"><a href="#父选择器" class="headerlink" title="父选择器 (&amp;)"></a>父选择器 (&amp;)</h4><blockquote>
+<p>在 scss 嵌套规则中，使用当前元素的伪类、伪元素，需要在当前元素{}内部写&amp;符号，表示当前元素</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  &amp;<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="comment">//&amp;表示当前元素</span></span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="comment">//&amp;表示当前元素</span></span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;伪元素&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="comment">//&amp;表示当前元素</span></span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;伪元素&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="模块复用、传参-mixin、-include"><a href="#模块复用、传参-mixin、-include" class="headerlink" title="模块复用、传参(@mixin、@include)"></a>模块复用、传参(@mixin、@include)</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//不需要传参数和@extend没有区别</span></span><br><span class="line"><span class="keyword">@mixin</span> com(<span class="variable">$value1</span>, <span class="variable">$value2</span>: black) &#123;</span><br><span class="line">  <span class="comment">//$value1 参数，使用模块的时候传入的值(12px、18px)</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$value1</span>;</span><br><span class="line">  <span class="comment">//$value2 参数，默认值为black，使用模块的时候传入的值(red)</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$value2</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> com(<span class="number">12px</span>, red);</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> com(<span class="number">12px</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$a</span>: <span class="number">22.5px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span> + <span class="variable">$a</span>;</span><br><span class="line">  <span class="attribute">height</span>: (<span class="number">100px</span>/<span class="number">11.5px</span>)+<span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="自定义函数-function、-return"><a href="#自定义函数-function、-return" class="headerlink" title="自定义函数 (@function、@return)"></a>自定义函数 (@function、@return)</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义函数</span></span><br><span class="line"><span class="keyword">@function</span> dprValue(<span class="variable">$dpr</span>: <span class="number">1</span>, <span class="variable">$value</span>) &#123;</span><br><span class="line">  <span class="comment">//函数的返回值</span></span><br><span class="line">  <span class="keyword">@return</span> <span class="variable">$dpr</span> * <span class="variable">$value</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="built_in">dprValue</span>(<span class="number">2</span>, <span class="number">100px</span>);</span><br><span class="line">  <span class="attribute">height</span>: <span class="built_in">dprValue</span>(<span class="number">2</span>, <span class="number">100px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="less"><a href="#less" class="headerlink" title="less"></a>less</h3><h4 id="变量"><a href="#变量" class="headerlink" title="变量(@)"></a>变量(@)</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@w:</span> <span class="number">100px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">@w</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="嵌套-父选择器"><a href="#嵌套-父选择器" class="headerlink" title="嵌套 &#x2F; 父选择器"></a>嵌套 &#x2F; 父选择器</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="selector-tag">header</span> &#123;</span><br><span class="line">    &amp;<span class="selector-pseudo">:hover</span> &gt; <span class="selector-tag">p</span> &#123;</span><br><span class="line">      <span class="attribute">color</span>: blue;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@w:</span> <span class="number">100px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="variable">@w:</span> <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">@w</span>; <span class="comment">//100px (就近原则)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="模块复用"><a href="#模块复用" class="headerlink" title="模块复用"></a>模块复用</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义模块</span></span><br><span class="line"><span class="comment">//带参数</span></span><br><span class="line"><span class="selector-class">.com</span> (<span class="variable">@value</span>:center) &#123;</span><br><span class="line">  <span class="attribute">display</span>: center;</span><br><span class="line">  <span class="attribute">justify-content</span>: <span class="variable">@value</span>;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//不带参数</span></span><br><span class="line"><span class="selector-class">.com2</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">//使用模块</span></span><br><span class="line">  <span class="selector-class">.com</span>(space-between);</span><br><span class="line">  <span class="selector-class">.com2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="built_in">if</span>((<span class="number">2</span> &gt; <span class="number">1</span>), <span class="number">0</span>, <span class="number">3px</span>);</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Less-和-Scss-有什么区别"><a href="#Less-和-Scss-有什么区别" class="headerlink" title="Less 和 Scss 有什么区别"></a>Less 和 Scss 有什么区别</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">不同点:</span><br><span class="line">1.less 后缀名为.less ,scss后缀名为.scss;</span><br><span class="line">2.scss 运行环境服务端(node、ruby、dart),less 运行环境可以在浏览器中运行(客户端，less.js由js编写)</span><br><span class="line">3.less 使用@符号作为变量名，scss使用$符号</span><br><span class="line">4.scss 拥有if、for、each控制指令，less没有</span><br><span class="line">5.scss 整体功能比less强大，算是一门真正的编程语言，less只是自定义语法的解析器(css)</span><br><span class="line">6.scss 拥有工具库 Compass，less拥有UI框架 Bootstrap</span><br><span class="line"></span><br><span class="line">相同点:</span><br><span class="line">1.都是css预处理器</span><br><span class="line">2.都可以定义变量、函数、复用模块</span><br><span class="line">3.为了让css操作更加灵活、拓展功能</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" data-id="clo32arg50018t0wb5tzg7mzp" data-title="预处理器" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          形变
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/08/31/css%E8%BF%9B%E9%98%B6/flex/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">flex</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

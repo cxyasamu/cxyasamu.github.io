@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>动画 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="animation 动画 css 动画和过渡动画相同点:可以控制元素从初始阶段到最终阶段内发生的变化，例如动画时长、动画效果、动画的等待时间   css 动画和过渡动画的不同点:动画对元素变化的方式有更多的控制和选择，例如控制动画开始到结束之间的效果，过渡动画是控制不了的，一旦开始就无法停止，动画还可以使用 js 控制动画暂停和开始  关键帧 帧，就是动画中最小的影像画面，相当于是电影胶片的每一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动画">
+<meta property="og:url" content="http://example.com/2023/09/07/css%E8%BF%9B%E9%98%B6/%E5%8A%A8%E7%94%BB/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="animation 动画 css 动画和过渡动画相同点:可以控制元素从初始阶段到最终阶段内发生的变化，例如动画时长、动画效果、动画的等待时间   css 动画和过渡动画的不同点:动画对元素变化的方式有更多的控制和选择，例如控制动画开始到结束之间的效果，过渡动画是控制不了的，一旦开始就无法停止，动画还可以使用 js 控制动画暂停和开始  关键帧 帧，就是动画中最小的影像画面，相当于是电影胶片的每一个">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-07T04:05:20.000Z">
+<meta property="article:modified_time" content="2023-09-11T02:59:12.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="css">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-css进阶/动画" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/07/css%E8%BF%9B%E9%98%B6/%E5%8A%A8%E7%94%BB/" class="article-date">
+  <time class="dt-published" datetime="2023-09-07T04:05:20.000Z" itemprop="datePublished">2023-09-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      动画
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="animation-动画"><a href="#animation-动画" class="headerlink" title="animation 动画"></a>animation 动画</h3><blockquote>
+<p>css 动画和过渡动画相同点:可以控制元素从初始阶段到最终阶段内发生的变化，例如动画时长、动画效果、动画的等待时间</p>
+</blockquote>
+<blockquote>
+<p>css 动画和过渡动画的不同点:动画对元素变化的方式有更多的控制和选择，例如控制动画开始到结束之间的效果，过渡动画是控制不了的，一旦开始就无法停止，动画还可以使用 js 控制动画暂停和开始</p>
+</blockquote>
+<h3 id="关键帧"><a href="#关键帧" class="headerlink" title="关键帧"></a>关键帧</h3><blockquote>
+<p>帧，就是动画中最小的影像画面，相当于是电影胶片的每一个镜头</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 注意，选择符的顺序是可以倒序的，相当于是倒着看视频 */</span></span><br><span class="line"><span class="keyword">@keyframes</span> 动画名称 &#123;</span><br><span class="line">  <span class="comment">/* 关键帧选择符 */</span></span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">10%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* ···更多细节 */</span></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> 动画名称 &#123;</span><br><span class="line">  <span class="comment">/* 关键帧选择符 */</span></span><br><span class="line">  <span class="selector-tag">from</span>&#123;</span><br><span class="line">    <span class="comment">/* 相当于0% */</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">to</span>&#123;</span><br><span class="line">    <span class="comment">/* 相当于100% */</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-属性-复合属性"><a href="#animation-属性-复合属性" class="headerlink" title="animation 属性(复合属性)"></a>animation 属性(复合属性)</h3><blockquote>
+<p>想要元素拥有动画效果，必须填写此属性，并且还需要加上关键帧动画名</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: 动画名 动画时长 | 动画播放频率 | 动画延迟播放 | 动画播放的方向 |</span><br><span class="line">    播放状态 | 填充模式 | 播放次数;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-name-动画名称"><a href="#animation-name-动画名称" class="headerlink" title="animation-name 动画名称"></a>animation-name 动画名称</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* none默认值，即无动画 */</span></span><br><span class="line">  <span class="attribute">animation-name</span>: 动画名称<span class="number">1</span>, 动画名称<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-duration-动画时长"><a href="#animation-duration-动画时长" class="headerlink" title="animation-duration 动画时长"></a>animation-duration 动画时长</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* s 代表的秒 ,ms代表的是毫秒，1000ms等于1s*/</span></span><br><span class="line">  <span class="attribute">animation-duration</span>: <span class="number">1s</span> | <span class="number">1000ms</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-direction-动画播放方向"><a href="#animation-direction-动画播放方向" class="headerlink" title="animation-direction 动画播放方向"></a>animation-direction 动画播放方向</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    normal 默认值，0%-100%</span></span><br><span class="line"><span class="comment">    reverse 倒序播放，100%-0%</span></span><br><span class="line"><span class="comment">    alternate 交替播放 0%-100%播放完之后，从100%-0%继续播放</span></span><br><span class="line"><span class="comment">    alternate-reverse 倒序交替播放 100%-0%播放完之后，从0%-100%继续播放</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">animation-direction</span>: normal | reverse | alternate | alternate-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-iteration-count-动画播放次数"><a href="#animation-iteration-count-动画播放次数" class="headerlink" title="animation-iteration-count 动画播放次数"></a>animation-iteration-count 动画播放次数</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 默认值是1，infinite无限循环播放 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">animation-iteration-count</span>: <span class="number">1</span> | infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-delay-动画延时播放"><a href="#animation-delay-动画延时播放" class="headerlink" title="animation-delay 动画延时播放"></a>animation-delay 动画延时播放</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* s 代表的秒 ,ms代表的是毫秒，默认是0秒/^[\u4E00-\u9FA5](字第)([0-9a-zA-Z]&#123;4,8&#125;)(号?)$/*/</span></span><br><span class="line">  <span class="attribute">animation-delay</span>: <span class="number">0s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-timing-function-动画频率-速度曲线"><a href="#animation-timing-function-动画频率-速度曲线" class="headerlink" title="animation-timing-function 动画频率(速度曲线)"></a>animation-timing-function 动画频率(速度曲线)</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">    linear  匀速(默认值)</span></span><br><span class="line"><span class="comment">    ease    丝滑过渡(快)</span></span><br><span class="line"><span class="comment">    ease-in 由慢变快</span></span><br><span class="line"><span class="comment">    ease-out 由块变慢</span></span><br><span class="line"><span class="comment">    ease-in-out 由慢变快，在变慢</span></span><br><span class="line"><span class="comment">    steps(number) 逐帧动画，参数为数字(帧数)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">animation-timing-function</span>: linear | ease |ease-in | ease-out |ease-in-out</span><br><span class="line">    |<span class="built_in">steps</span>(number);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-play-state-动画状态"><a href="#animation-play-state-动画状态" class="headerlink" title="animation-play-state 动画状态"></a>animation-play-state 动画状态</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    running 播放状态(默认)</span></span><br><span class="line"><span class="comment">    paused   停止状态</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">  <span class="attribute">animation-play-state</span>: paused | running;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-fill-mode-动画填充模式"><a href="#animation-fill-mode-动画填充模式" class="headerlink" title="animation-fill-mode 动画填充模式"></a>animation-fill-mode 动画填充模式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    none    无填充模式</span></span><br><span class="line"><span class="comment">    forwards 动画结束之后，结尾的动画样式属性将会继续应用在元素上(保留结束动画状态)(定义结束)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    backwards   动画开始前采用第一个关键帧中定义的值,遇到animation-delay等待的时间会继续保留当前元素的样式作为第一个关键帧中定义的值(定义开始)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    both    动画将遵循forwards和backwards的规则(两种状态都会存在)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">animation-fill-mode</span>: none | forwards | backwards | both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="逐帧动画-steps"><a href="#逐帧动画-steps" class="headerlink" title="逐帧动画 steps()"></a>逐帧动画 steps()</h3><blockquote>
+<p>又名定格动画，它的原理就是根据不同的图像连续播放，从而产生动画效果(每一个图像代表的就是一帧)</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    参数1 </span></span><br><span class="line"><span class="comment">      指定steps函数中的间隔数量(正整数)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    参数2(可选)</span></span><br><span class="line"><span class="comment">      一共两个值，start和end(默认值)，作用在指定每一个间隔的起点或是终点阶段的变化</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">      start 第一帧是第一步动画结束</span></span><br><span class="line"><span class="comment">      end   第一帧是第一步动画开始</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">animation-timing-function</span>: <span class="built_in">steps</span>(参数<span class="number">1</span>, 参数<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/07/css%E8%BF%9B%E9%98%B6/%E5%8A%A8%E7%94%BB/" data-id="clo32arfg000at0wb9ysv5umz" data-title="动画" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/12/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9F%A5%E8%AF%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          移动端知识
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">形变</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

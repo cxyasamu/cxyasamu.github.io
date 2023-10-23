@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>形变 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="transform 形变 主要用于元素平移、旋转、缩放, 对于变形的元素, 它会有自己的堆叠上下文, 经过缩放、平移等形变外型看似变化了, 但是实际占用的大小位置是不变的  123456789101112div &amp;#123;  &#x2F;*     translate 平移    rotate 旋转    scale 缩放    skew 变形    none 默认值, 无形变    注意: 形变分为两种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="形变">
+<meta property="og:url" content="http://example.com/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="transform 形变 主要用于元素平移、旋转、缩放, 对于变形的元素, 它会有自己的堆叠上下文, 经过缩放、平移等形变外型看似变化了, 但是实际占用的大小位置是不变的  123456789101112div &amp;#123;  &#x2F;*     translate 平移    rotate 旋转    scale 缩放    skew 变形    none 默认值, 无形变    注意: 形变分为两种">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-06T12:00:30.000Z">
+<meta property="article:modified_time" content="2023-09-11T02:59:14.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="css">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-css进阶/形变" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/" class="article-date">
+  <time class="dt-published" datetime="2023-09-06T12:00:30.000Z" itemprop="datePublished">2023-09-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      形变
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="transform-形变"><a href="#transform-形变" class="headerlink" title="transform 形变"></a>transform 形变</h2><blockquote>
+<p>主要用于元素平移、旋转、缩放, 对于变形的元素, 它会有自己的堆叠上下文, 经过缩放、平移等形变外型看似变化了, 但是实际占用的大小位置是不变的</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    translate 平移</span></span><br><span class="line"><span class="comment">    rotate 旋转</span></span><br><span class="line"><span class="comment">    scale 缩放</span></span><br><span class="line"><span class="comment">    skew 变形</span></span><br><span class="line"><span class="comment">    none 默认值, 无形变</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    注意: 形变分为两种模式, 2D和3D, 默认为2D模式, transform 可以存在多个形变类型直接使用空格连接即刻</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attribute">transform</span>: translate | rotate | scale | skew | none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="translate-平移-当前元素位置进行平移"><a href="#translate-平移-当前元素位置进行平移" class="headerlink" title="translate 平移 (当前元素位置进行平移)"></a>translate 平移 (当前元素位置进行平移)</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  单位: px, %, 支持负数 </span></span><br><span class="line"><span class="comment">  只传一个值, 默认就是x轴(水平方向)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(x, y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="translate-单独设置水平或者垂直方向"><a href="#translate-单独设置水平或者垂直方向" class="headerlink" title="translate 单独设置水平或者垂直方向"></a>translate 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  translateX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  translateY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateX</span>() | <span class="built_in">translateY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="rotate-旋转"><a href="#rotate-旋转" class="headerlink" title="rotate 旋转"></a>rotate 旋转</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* deg 度数, 默认顺时针, 负数才是逆时针 */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="rotate-单独设置水平或者垂直方向"><a href="#rotate-单独设置水平或者垂直方向" class="headerlink" title="rotate 单独设置水平或者垂直方向"></a>rotate 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  rotateX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  rotateY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateX</span>() | <span class="built_in">rotateY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="元素中心点-变形的原点"><a href="#元素中心点-变形的原点" class="headerlink" title="元素中心点 (变形的原点)"></a>元素中心点 (变形的原点)</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    旋转的时候, 默认为center</span></span><br><span class="line"><span class="comment">    可以接收三个值, 第一个值就是x轴, 第二个值就是y轴, 第三个就是z轴, 默认值 (50%, 50%, 0)</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attribute">transform-origin</span>: left | right | bottom | center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="scale-缩放"><a href="#scale-缩放" class="headerlink" title="scale 缩放"></a>scale 缩放</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    第一个值代表水平方向(x轴), 可以为小数, 1代表默认大小</span></span><br><span class="line"><span class="comment">    第二个值代表垂直方向(y轴), 可以为小数, 1代表默认大小1倍数</span></span><br><span class="line"><span class="comment">    只写一个值的时候, 默认是x和y轴同时设置缩放</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="scale-单独设置水平或者垂直方向"><a href="#scale-单独设置水平或者垂直方向" class="headerlink" title="scale 单独设置水平或者垂直方向"></a>scale 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  scaleX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  scaleY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scaleX</span>() | <span class="built_in">scaleY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="skew-扭曲"><a href="#skew-扭曲" class="headerlink" title="skew 扭曲"></a>skew 扭曲</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  第一个值表示水平轴扭曲(x轴)</span></span><br><span class="line"><span class="comment">  第二个值表示垂直轴扭曲(y轴)</span></span><br><span class="line"><span class="comment">  只写了一个值的时候, 默认是x轴, y轴是为0</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>, <span class="number">30deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="skew-单独设置水平或者垂直方向"><a href="#skew-单独设置水平或者垂直方向" class="headerlink" title="skew 单独设置水平或者垂直方向"></a>skew 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  skewX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  skewY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">skewX</span>() | <span class="built_in">skewY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="透视-perspective"><a href="#透视-perspective" class="headerlink" title="透视 perspective"></a>透视 perspective</h3><blockquote>
+<p>开启 3d 视觉效果, 配合 transform 的属性使用, perspective 类似电影的投屏, 视距越大, 当前屏幕距离 3d 物体越远</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 定义透视两种方法 */</span></span><br><span class="line"><span class="comment">/* 第一种单独设置perspective, 初次渲染时, 投影到屏幕上 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">perspective</span>: <span class="number">500px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 第二种设置在 transform 属性中, 由transform的变化而进行重新渲染图形 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">perspective</span>(<span class="number">500px</span>) <span class="built_in">rotateY</span>(<span class="number">30deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">注意:</span><br><span class="line">  perspective 属性如果要单独设置, 一般设置在爷爷元素上, 父亲元素设置开启3d属性 transform-style: perserve-3d, 子元素设置3d形变</span><br><span class="line"></span><br><span class="line">爷爷元素 &#123;</span><br><span class="line">  perspective: 800px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">父亲元素 &#123;</span><br><span class="line">  # 3d效果开启之后, 所有的子元素都可以以3d效果呈现出来</span><br><span class="line">  transform-style: perserve-3d;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">子元素 &#123;</span><br><span class="line">  transform: translateZ(30px)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;爷爷&gt;</span><br><span class="line">  &lt;父亲&gt;</span><br><span class="line">    &lt;子&gt;&lt;/子&gt;</span><br><span class="line">    &lt;子&gt;&lt;/子&gt;</span><br><span class="line">    &lt;子&gt;&lt;/子&gt;</span><br><span class="line">  &lt;/父亲&gt;</span><br><span class="line">&lt;/爷爷&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="过渡效果-transition"><a href="#过渡效果-transition" class="headerlink" title="过渡效果 transition"></a>过渡效果 transition</h3><blockquote>
+<p>是一个元素的过渡控制在一段时间内由初始状态转变成结束状态, 可以控制元素的过渡时间、速度曲线</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  过渡属性</span></span><br><span class="line"><span class="comment">    指的是css的实现, 类似width、transform、color等等, display不支持过渡效果, 默认all所有属性</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  过渡时间 </span></span><br><span class="line"><span class="comment">    是必须填写, 其他可以不填 </span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  过渡速度曲线</span></span><br><span class="line"><span class="comment">    liner: 线性过渡 (匀速, 默认)</span></span><br><span class="line"><span class="comment">    ease: 平滑</span></span><br><span class="line"><span class="comment">    ease-in: 由慢到快</span></span><br><span class="line"><span class="comment">    ease-out: 由快到慢</span></span><br><span class="line"><span class="comment">    ease-in-out: 由慢到快再到慢</span></span><br><span class="line"><span class="comment">    贝塞尔曲线</span></span><br><span class="line"><span class="comment">  </span></span><br><span class="line"><span class="comment">  等待过渡时间</span></span><br><span class="line"><span class="comment">    过渡效果何时开始, 单位为 s (秒), 默认0</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transition</span>: 过渡属性 | 过渡时间 | 过渡速度曲线 | 等待过渡时间;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* 设置多个属性 */</span></span><br><span class="line">  <span class="comment">/* transition: height 1s, width 3s,n,,,, */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/" data-id="clo32arft000mt0wbcgttdnqn" data-title="形变" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/07/css%E8%BF%9B%E9%98%B6/%E5%8A%A8%E7%94%BB/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          动画
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">预处理器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

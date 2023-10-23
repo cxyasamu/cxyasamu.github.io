@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>flex | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="flex 弹性盒子(flex 布局) css3 的新布局方式，是一种当前页面需要适应不同屏幕大小，以及设备类型时,确保元素拥有合适的行为进行布局方式  123456789&#x2F;*     主轴    元素默认沿着主轴进行排列(默认的x轴)    交叉轴(侧轴)    垂直于flex元素放置方向的轴(类似y轴)    注意:flex布局可以更改主轴*&#x2F;div &amp;#123;  display: flex;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flex">
+<meta property="og:url" content="http://example.com/2023/08/31/css%E8%BF%9B%E9%98%B6/flex/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="flex 弹性盒子(flex 布局) css3 的新布局方式，是一种当前页面需要适应不同屏幕大小，以及设备类型时,确保元素拥有合适的行为进行布局方式  123456789&#x2F;*     主轴    元素默认沿着主轴进行排列(默认的x轴)    交叉轴(侧轴)    垂直于flex元素放置方向的轴(类似y轴)    注意:flex布局可以更改主轴*&#x2F;div &amp;#123;  display: flex;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-08-31T03:24:30.000Z">
+<meta property="article:modified_time" content="2023-08-31T10:47:24.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="css">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-css进阶/flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/08/31/css%E8%BF%9B%E9%98%B6/flex/" class="article-date">
+  <time class="dt-published" datetime="2023-08-31T03:24:30.000Z" itemprop="datePublished">2023-08-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      flex
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="flex-弹性盒子-flex-布局"><a href="#flex-弹性盒子-flex-布局" class="headerlink" title="flex 弹性盒子(flex 布局)"></a>flex 弹性盒子(flex 布局)</h2><blockquote>
+<p>css3 的新布局方式，是一种当前页面需要适应不同屏幕大小，以及设备类型时,确保元素拥有合适的行为进行布局方式</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    主轴    元素默认沿着主轴进行排列(默认的x轴)</span></span><br><span class="line"><span class="comment">    交叉轴(侧轴)    垂直于flex元素放置方向的轴(类似y轴)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    注意:flex布局可以更改主轴</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="flex-特点"><a href="#flex-特点" class="headerlink" title="flex 特点"></a>flex 特点</h3><ul>
+<li>弹性盒子由弹性容器和弹性子元素组成</li>
+<li>弹性容器设置 css 属性 display:flex 即可定义为弹性容器</li>
+<li>弹性容器中可以包含一个或者多个弹性子元素</li>
+<li>如果子元素的高度没有设置，高度则由弹性盒子是默认分配的</li>
+</ul>
+<h3 id="定义-flex-容器的主轴-flex-direction"><a href="#定义-flex-容器的主轴-flex-direction" class="headerlink" title="定义 flex 容器的主轴 flex-direction"></a>定义 flex 容器的主轴 flex-direction</h3><blockquote>
+<p>该属性设置弹性容器的主轴方向</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    row             默认值，flex容器主轴为水平方向(向右)</span></span><br><span class="line"><span class="comment">    row-reverse     flex容器主轴为倒序水平方向(向左)</span></span><br><span class="line"><span class="comment">    column          flex容器主轴为垂直方向(向下)</span></span><br><span class="line"><span class="comment">    column-reverse  flex容器主轴为倒序垂直方向(向上)</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-direction</span>: row | row-reverse | column | column-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="弹性子元素换行-flex-wrap"><a href="#弹性子元素换行-flex-wrap" class="headerlink" title="弹性子元素换行 flex-wrap"></a>弹性子元素换行 flex-wrap</h3><blockquote>
+<p>宽度不够所有子元素排列的时候，可以设置换行排列</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    nowrap  默认值,强制不换行</span></span><br><span class="line"><span class="comment">    wrap    允许换行</span></span><br><span class="line"><span class="comment">    wrap-reverse    允许换行并倒序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="弹性容器主轴方式子元素的布局方式-justify-content"><a href="#弹性容器主轴方式子元素的布局方式-justify-content" class="headerlink" title="弹性容器主轴方式子元素的布局方式 justify-content"></a>弹性容器主轴方式子元素的布局方式 justify-content</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    flex-start  </span></span><br><span class="line"><span class="comment">        默认值，flex子元素紧靠主轴的初始边进行排列</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    flex-end    </span></span><br><span class="line"><span class="comment">        跟flex-start相反，flex子元素紧靠主轴的结束边进行排列(终边)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    center      </span></span><br><span class="line"><span class="comment">        将所有的flex子元素看作是一个整体，将这个整体居中排列到主轴中心点</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    space-between </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素会紧靠边界，其余flex子元素会在中心排列(间隙相同)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    space-around </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素距离边界的间隙与中间flex子元素间隙比列 1:2</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    space-evenly    </span></span><br><span class="line"><span class="comment">        所有flex子元素之间间隙相同</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around |</span><br><span class="line">  space-evenly;</span><br></pre></td></tr></table></figure>
+
+<h3 id="交叉轴的子元素排列方式-单行子元素-align-items"><a href="#交叉轴的子元素排列方式-单行子元素-align-items" class="headerlink" title="交叉轴的子元素排列方式(单行子元素) align-items"></a>交叉轴的子元素排列方式(单行子元素) align-items</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    center  居中对齐，将flex子元素的中点与所在的交叉轴进行中点对齐</span></span><br><span class="line"><span class="comment">    flex-start  默认值，flex子元素在交叉轴紧靠初始边进行排列</span></span><br><span class="line"><span class="comment">    flex-end    flex子元素在交叉轴紧靠结束边进行排列</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  align-item: center | flex-start | flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="交叉轴的子元素排列方式-多行子元素-align-content"><a href="#交叉轴的子元素排列方式-多行子元素-align-content" class="headerlink" title="交叉轴的子元素排列方式(多行子元素) align-content"></a>交叉轴的子元素排列方式(多行子元素) align-content</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    center  居中对齐，将flex子元素的中点与所在的交叉轴进行中点对齐</span></span><br><span class="line"><span class="comment">    flex-start  flex子元素在交叉轴紧靠初始边进行排列</span></span><br><span class="line"><span class="comment">    flex-end    flex子元素在交叉轴紧靠结束边进行排列</span></span><br><span class="line"><span class="comment">    stretch     默认值，交叉轴的剩余分配，自空间动平均到每个弹性元素上，直到边与边重合</span></span><br><span class="line"><span class="comment">    space-between </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素会紧靠边界，其余flex子元素会在中心排列(间隙相同)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    space-around </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素距离边界的间隙与中间flex子元素间隙比列 1:2</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    space-evenly    </span></span><br><span class="line"><span class="comment">        所有flex子元素之间间隙相同</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">align-content</span>: center | flex-start | flex-end | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="定义指定的-flex-子元素交叉轴对齐方式-align-self"><a href="#定义指定的-flex-子元素交叉轴对齐方式-align-self" class="headerlink" title="定义指定的 flex 子元素交叉轴对齐方式 align-self"></a>定义指定的 flex 子元素交叉轴对齐方式 align-self</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: center | flex-start | flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="缩减因子-flex-shrink"><a href="#缩减因子-flex-shrink" class="headerlink" title="缩减因子 flex-shrink"></a>缩减因子 flex-shrink</h3><blockquote>
+<p>如果当前的 flex 盒子宽度不够的子元素排列的情况下，会缩减子元素的宽度，缩减因子设置的值按比例缩减宽度</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    默认值为1，不能为负数，可以使用数字、小数点、值越大、缩减的比例越大</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-shrink</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(1)计算当前超出空间可缩减的大小(缩减空间)</span><br><span class="line">公式:   总超出空间 * (所有flex子元素flex-shrink总和 &gt;=1 ? 1:所有flex子元素flex-shrink总和)</span><br><span class="line"></span><br><span class="line">(2) 计算每一个flex子元素缩减的大小</span><br><span class="line">公式: 缩减空间 * (单个flex子元素flex-shrink / 所有flex子元素flex-shrink总和)</span><br></pre></td></tr></table></figure>
+
+<h3 id="增长因子-flex-grow"><a href="#增长因子-flex-grow" class="headerlink" title="增长因子 flex-grow"></a>增长因子 flex-grow</h3><blockquote>
+<p>弹性容器出现多余空间，设置 flex 子元素的增长因子，默认值为 0，不能为负数，值越大，增长值就越高</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-grow</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(1) 单个flex子元素的增长空间(多出的空间)</span><br><span class="line">公式 : 多余空间 * (单个flex子元素-grow / 所有的flex子元素flex-grow)</span><br></pre></td></tr></table></figure>
+
+<h3 id="定义-flex-子元素的宽度-flex-basis"><a href="#定义-flex-子元素的宽度-flex-basis" class="headerlink" title="定义 flex 子元素的宽度 flex-basis"></a>定义 flex 子元素的宽度 flex-basis</h3><blockquote>
+<p>定义当前 flex 子元素是缩放因子&#x2F;增长因子之前的宽度，flex-basis 优先级比 width 高(覆盖)</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* auto默认值 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-basis</span>: number | auto |inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="复合语法-flex"><a href="#复合语法-flex" class="headerlink" title="复合语法 flex"></a>复合语法 flex</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: flex-grow flex-shrink flex-basis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="排序-order"><a href="#排序-order" class="headerlink" title="排序 order"></a>排序 order</h3><blockquote>
+<p>用于改变 flex 子元素的排序位置</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* 默认值为0，需要使用整数，值越大排列顺序越后 */</span></span><br><span class="line">  <span class="attribute">order</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/08/31/css%E8%BF%9B%E9%98%B6/flex/" data-id="clo32arfi000bt0wb3uhb8pn1" data-title="flex" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          预处理器
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/08/30/css%E8%BF%9B%E9%98%B6/BFC(%E9%9D%A2%E8%AF%95%E9%87%8D%E7%82%B9)/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">BFC</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

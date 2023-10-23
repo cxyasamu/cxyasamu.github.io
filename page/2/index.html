@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-js入门-ECMA/运算符" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/20/js%E5%85%A5%E9%97%A8-ECMA/%E8%BF%90%E7%AE%97%E7%AC%A6/" class="article-date">
+  <time class="dt-published" datetime="2023-09-20T09:08:30.000Z" itemprop="datePublished">2023-09-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/20/js%E5%85%A5%E9%97%A8-ECMA/%E8%BF%90%E7%AE%97%E7%AC%A6/">运算符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算数运算符-隐式转换"><a href="#算数运算符-隐式转换" class="headerlink" title="算数运算符(隐式转换)"></a>算数运算符(隐式转换)</h3><blockquote>
+<p>用于执行变量或者值之间的算数运算</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">1.+ 加号运算符</span><br><span class="line">    具有加法、字符串拼接的作用</span><br><span class="line"></span><br><span class="line">2. - 减号运算符</span><br><span class="line">    具有减法的作用</span><br><span class="line"></span><br><span class="line">3. * 乘号运算符</span><br><span class="line">    具有乘法的作用</span><br><span class="line"></span><br><span class="line">4. / 减号运算符</span><br><span class="line">    具有除法的作用</span><br><span class="line"></span><br><span class="line">5. % 取余数</span><br><span class="line">    具有取余数的作用</span><br><span class="line"></span><br><span class="line">6. 一元运算符</span><br><span class="line">    ++ 自增1</span><br><span class="line">    -- 自减1</span><br></pre></td></tr></table></figure>
+
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><blockquote>
+<p>用于 js 变量的赋值(“&#x3D;”)</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.= 赋值操作</span><br><span class="line">2. +=先进行相加运算，后赋值</span><br><span class="line">3. -=先进行相减运算，后赋值</span><br><span class="line">4. *=先进行相乘运算，后赋值</span><br><span class="line">5. /=先进行相除运算，后赋值</span><br><span class="line">6. %=先进行取余运算，后赋值</span><br></pre></td></tr></table></figure>
+
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><blockquote>
+<p>用于 js 进行逻辑判断(短路运算)</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.|| 逻辑或</span><br><span class="line">    只要有一个操作数为真，则返回真(结果)</span><br><span class="line">    (有真则真，全假则假)</span><br><span class="line"></span><br><span class="line">2. &amp;&amp; 逻辑与</span><br><span class="line">    只要有一个操作数为假，则返回假(结果)</span><br><span class="line">    (有假则假，全真则真)</span><br><span class="line"></span><br><span class="line">3. ! 逻辑非</span><br><span class="line">    操作数转换为布尔值，再取反(结果)</span><br></pre></td></tr></table></figure>
+
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><blockquote>
+<p>由于 js 进行数据的比较，返回布尔值(true 和 false)</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">1. &gt; 大于号</span><br><span class="line">    如果第一个操作数大于第二个操作数，则&quot;&gt;&quot;符号计算的结果为true，否则为false</span><br><span class="line"></span><br><span class="line">2. &lt; 小于号</span><br><span class="line">    如果第一个操作数小于第二个操作数，则&quot;&lt;&quot;符号计算的结果为true，否则为false</span><br><span class="line"></span><br><span class="line">3.&gt;= 大于等于符号</span><br><span class="line">    如果第一个操作数大于等于第二个操作数，则&quot;&gt;=&quot;符号计算的结果为true，否则为false</span><br><span class="line"></span><br><span class="line">4.&lt;= 大于等于符号</span><br><span class="line">    如果第一个操作数小于等于第二个操作数，则&quot;&lt;=&quot;符号计算的结果为true，否则为false</span><br><span class="line"></span><br><span class="line">5. != 不等于号</span><br><span class="line">    如果第一个操作数不等于第二个操作数，则&quot;!=&quot;符号计算的结果为true，否则为false</span><br><span class="line"></span><br><span class="line">6. == 不等于号</span><br><span class="line">    如果第一个操作数等于第二个操作数，则&quot;==&quot;符号计算的结果为true，否则为false(对值进行比较)</span><br><span class="line"></span><br><span class="line">7.===全等于号</span><br><span class="line">    如果第一个操作数全等于第二个操作数，则&quot;===&quot;符号计算的结果为true，否则为false(对值和数据类型进行比较)</span><br></pre></td></tr></table></figure>
+
+<h3 id="三元运算符-三目运算"><a href="#三元运算符-三目运算" class="headerlink" title="三元运算符(三目运算)"></a>三元运算符(三目运算)</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">语法: 条件(真 / 假) ? 条件为真结果 : 条件为假结果;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/20/js%E5%85%A5%E9%97%A8-ECMA/%E8%BF%90%E7%AE%97%E7%AC%A6/" data-id="clo32arh1002pt0wbdkz9bpeu" data-title="运算符" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-js入门-ECMA/变量" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/20/js%E5%85%A5%E9%97%A8-ECMA/%E5%8F%98%E9%87%8F/" class="article-date">
+  <time class="dt-published" datetime="2023-09-20T08:09:20.000Z" itemprop="datePublished">2023-09-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/20/js%E5%85%A5%E9%97%A8-ECMA/%E5%8F%98%E9%87%8F/">变量</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote>
+<p>ECMAScript 的变量是松散型的，可以用来存储任何数据类型的数据，js 里面变量就是用来存储数据的(容器)</p>
+</blockquote>
+<h3 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h3><blockquote>
+<p>关键词 var 定义变量，如果变量没有值，默认值为 underfined</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 变量名</span></span><br><span class="line"><span class="comment">// 1.可以使用字母、数字、_、$等特殊字符</span></span><br><span class="line"><span class="comment">// 2.不可以使用数字开头、js内置关键字/保留字</span></span><br><span class="line"><span class="comment">// 3. 遇到多个单词的变量名使用驼峰命名(javaScript、JavaScript、java-script)</span></span><br><span class="line"><span class="keyword">var</span> 变量名 = 值;</span><br></pre></td></tr></table></figure>
+
+<h3 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h3><blockquote>
+<p>在编程语言中，一般固定的值称为字面量</p>
+</blockquote>
+<h3 id="变量提升"><a href="#变量提升" class="headerlink" title="变量提升"></a>变量提升</h3><blockquote>
+<p>js 的工作方式，先解析代码，获取所有全局的变量(var)并且把变量提升到代码的头部，然后再逐条执行代码(从第一行代码开始执行),全局变量就是在任意的地方都可以访问</p>
+</blockquote>
+<h3 id="变量和常量"><a href="#变量和常量" class="headerlink" title="变量和常量"></a>变量和常量</h3><ul>
+<li>声明过后可以被修改的数据，称为变量</li>
+<li>声明过后不允许修改的数据，称为常量</li>
+</ul>
+<h3 id="ES6-新增-let、const-关键字"><a href="#ES6-新增-let、const-关键字" class="headerlink" title="ES6 新增 let、const 关键字"></a>ES6 新增 let、const 关键字</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var 和 let的区别</span><br><span class="line">1.都可以声明变量</span><br><span class="line">2.var可以重复声明变量，let不可以</span><br><span class="line">3.var可以变量提升，let不可以</span><br><span class="line">4.let存在块级作用域(独立区域，其他地方读取不了)，var不存在</span><br><span class="line"></span><br><span class="line">var 和 const 的区别</span><br><span class="line">1.var 声明变量，const声明常量</span><br><span class="line">2. const不允许对值进行修改，var可以</span><br><span class="line">2.var可以重复声明，const不可以</span><br><span class="line">4. const存在块级作用域，var不存在</span><br><span class="line">5. const初始化必须有值</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/20/js%E5%85%A5%E9%97%A8-ECMA/%E5%8F%98%E9%87%8F/" data-id="clo32argz002mt0wb6pwjbh76" data-title="变量" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-js入门-ECMA/js的类型判断和转换" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/19/js%E5%85%A5%E9%97%A8-ECMA/js%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD%E5%92%8C%E8%BD%AC%E6%8D%A2/" class="article-date">
+  <time class="dt-published" datetime="2023-09-19T03:48:30.000Z" itemprop="datePublished">2023-09-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/19/js%E5%85%A5%E9%97%A8-ECMA/js%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD%E5%92%8C%E8%BD%AC%E6%8D%A2/">js的类型判断和转换</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="数据类型的判断"><a href="#数据类型的判断" class="headerlink" title="数据类型的判断"></a>数据类型的判断</h2><h3 id="typeof"><a href="#typeof" class="headerlink" title="typeof"></a>typeof</h3><blockquote>
+<p>用于判断数据类型(比较适合用于判断基础数据类型),返回当前数据的类型(字符串)；typeof 检测规则是把当前数值类型进行二进制转换,前三位二进制数值为 0，统一标识为对象(js 数据类型在底层)</p>
+</blockquote>
+<blockquote>
+<p>为什么 null 会错误的识别为 object 的主要原因(一个历史遗留问题)</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> 数据;</span><br></pre></td></tr></table></figure>
+
+<h3 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h3><blockquote>
+<p>用于检测构造函数的原型对象属性是否出现在某个实例对象的原型上，返回的布尔值</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">需要检测的数据 <span class="keyword">instanceof</span> 构造函数;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Object-prototype-toString-call"><a href="#Object-prototype-toString-call" class="headerlink" title="Object.prototype.toString.call()"></a>Object.prototype.toString.call()</h3><blockquote>
+<p>使用对象的原型去判断数据类型(经常使用的方法)</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(需要检测的数据);</span><br></pre></td></tr></table></figure>
+
+<h2 id="数据类型的转换-强制类型转换"><a href="#数据类型的转换-强制类型转换" class="headerlink" title="数据类型的转换(强制类型转换)"></a>数据类型的转换(强制类型转换)</h2><ul>
+<li><p>String(数据)全局方法(任意 js 环境下调用)</p>
+<blockquote>
+<p>将其他数据类型转换字符串类型，返回的是字符串类型的数值，String 函数中的参数会调用 toString 方法进行字符串转换</p>
+</blockquote>
+</li>
+<li><p>toString()对象方法(只有在当前对象下才能使用)</p>
+<blockquote>
+<p>和 String 方法的区别:不支持 null 和 underfined 的类型转换(报错，查找不到方法)</p>
+</blockquote>
+</li>
+<li><p>Number()全局方法</p>
+<blockquote>
+<p>将其他数据类型转换数字类型</p>
+</blockquote>
+</li>
+<li><p>Boolean()全局方法</p>
+<blockquote>
+<p>将其他数据类型转换为布尔类型,返回 true&#x2F;false</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/19/js%E5%85%A5%E9%97%A8-ECMA/js%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD%E5%92%8C%E8%BD%AC%E6%8D%A2/" data-id="clo32argm0028t0wb4b2l3fwe" data-title="js的类型判断和转换" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-js入门-ECMA/数据类型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/18/js%E5%85%A5%E9%97%A8-ECMA/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2023-09-18T04:19:30.000Z" itemprop="datePublished">2023-09-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/18/js%E5%85%A5%E9%97%A8-ECMA/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">数据类型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><blockquote>
+<p>各语言的原始数据类型(字符串、数字、布尔值),js 属于弱类型语言</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">弱类型语言</span><br><span class="line">    声明变量(自动判断当前变量的数据类型进行转换 无限制数据类型)</span><br><span class="line">    var str=&quot;Hello World&quot; ----&gt; 是一段文字，在js中自动转换数据类型为String</span><br><span class="line">    str=666 -----&gt; 在js中自动转换数据类型为Number</span><br><span class="line">    str=true -----&gt; 在js中自动转换数据类型为Boolean</span><br><span class="line"></span><br><span class="line">强类型语言(规定数据类型)</span><br><span class="line">    String str=&#x27;Korean&#x27;;</span><br><span class="line">    int i=1;</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串-String"><a href="#字符串-String" class="headerlink" title="字符串 String"></a>字符串 String</h3><blockquote>
+<p>可以使用双引号或者单引号表示字符，string 类型表示 0 或者多个 Unicode 字符组成的字符序列，统称为字符串</p>
+</blockquote>
+<ul>
+<li><p>转义字符</p>
+<blockquote>
+<p>字符串存在特殊符号，用于表达非打印符号，这种就是属于转义字符</p>
+</blockquote>
+</li>
+<li><p>字符串长度</p>
+<blockquote>
+<p>档期啊字符的长度，通过字符串自带的 length 属性获取</p>
+</blockquote>
+</li>
+<li><p>字符串拼接</p>
+<blockquote>
+<p>使用’+’进行字符串拼接</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="数字-Number"><a href="#数字-Number" class="headerlink" title="数字 Number"></a>数字 Number</h3><blockquote>
+<p>支持整数、负数、小数，js 的数字类型使用的是双精度浮点型(64 位二进制)，表达方式两种，整数和浮点数(特殊值:NaN(not a number)、Infinity、-Infinity)</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">精度问题</span><br><span class="line">所有的代码执行的时候编译为二进制 类似01010100，别名叫做机器码(机器所能识别的编码)，同样的js处理数字的时候也是需要转二进制的，避免不了出现无限不循环二进制</span><br><span class="line"></span><br><span class="line">小数点长度最大支持16位(双精度浮点型，15位小数+小数点)</span><br></pre></td></tr></table></figure>
+
+<h3 id="布尔值-Boolean"><a href="#布尔值-Boolean" class="headerlink" title="布尔值 Boolean"></a>布尔值 Boolean</h3><blockquote>
+<p>字面值:true || false 其他表示形式:0、NaN、空字符串、underfined、null 他们的布尔值都是 false</p>
+</blockquote>
+<h3 id="未定义值-Underfined"><a href="#未定义值-Underfined" class="headerlink" title="未定义值 Underfined"></a>未定义值 Underfined</h3><blockquote>
+<p>声明变量但是没有对齐赋值，表示无值(空的值);<br>函数默认返回值也是 underfined;<br>访问对象不存在属性的时候，返回 underfined</p>
+</blockquote>
+<h3 id="空对象-Null"><a href="#空对象-Null" class="headerlink" title="空对象 Null"></a>空对象 Null</h3><blockquote>
+<p>空值，空的对象，空&#x2F;不存在的对象引用地址(指针)</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">(1) 初始化对象变量,后期会设置这个null为一个真正的对象</span><br><span class="line">let obj =null;</span><br><span class="line">obj&#123;msg:&quot;对象&quot;&#125;;</span><br><span class="line">(2) 表示函数的参数不为对象</span><br><span class="line">function fn(arg)&#123;</span><br><span class="line">  if(arg==null)&#123;</span><br><span class="line">    console.log(&quot;参数为null&quot;)</span><br><span class="line">  &#125;</span><br><span class="line">  fn(null);参数为null</span><br><span class="line">  fn(&#x27;hi&#x27;);参数不为null</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="唯一值-Symbol"><a href="#唯一值-Symbol" class="headerlink" title="唯一值 Symbol"></a>唯一值 Symbol</h3><blockquote>
+<p>表示独一无二的值，使用方式实在定义对象唯一属性名(ES6 新增数据类型)</p>
+</blockquote>
+<h2 id="引用数据类型-复杂数据类型"><a href="#引用数据类型-复杂数据类型" class="headerlink" title="引用数据类型(复杂数据类型)"></a>引用数据类型(复杂数据类型)</h2><h3 id="对象类型-Object"><a href="#对象类型-Object" class="headerlink" title="对象类型 Object"></a>对象类型 Object</h3><blockquote>
+<p>对象是数据和功能的集合，对象的数据存放方式以键值对形式(键名和键值)</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  键名<span class="number">1</span>: 键值<span class="number">1</span>,</span><br><span class="line">  键名<span class="number">2</span>: 键值<span class="number">2</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组类型-Array"><a href="#数组类型-Array" class="headerlink" title="数组类型 Array"></a>数组类型 Array</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr=[数组成员<span class="number">1</span>，数组成员<span class="number">2</span>，···]</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数-Function"><a href="#函数-Function" class="headerlink" title="函数 Function"></a>函数 Function</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 立即执行函数</span></span><br><span class="line"><span class="comment">// (&quot;函数体&quot;)()</span></span><br><span class="line"><span class="comment">// 匿名函数</span></span><br><span class="line">(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// 代码块区域</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> 函数名 = <span class="keyword">function</span> (<span class="params"></span>) &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 命名函数</span></span><br><span class="line"><span class="keyword">function</span> 函数名() &#123;</span><br><span class="line">  <span class="comment">// 代码块区域</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/18/js%E5%85%A5%E9%97%A8-ECMA/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" data-id="clo32argu002ft0wbdspc2uoj" data-title="数据类型" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-js入门-ECMA/js入门" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/18/js%E5%85%A5%E9%97%A8-ECMA/js%E5%85%A5%E9%97%A8/" class="article-date">
+  <time class="dt-published" datetime="2023-09-18T04:18:30.000Z" itemprop="datePublished">2023-09-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/18/js%E5%85%A5%E9%97%A8-ECMA/js%E5%85%A5%E9%97%A8/">js入门</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="js-入门"><a href="#js-入门" class="headerlink" title="js 入门"></a>js 入门</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><blockquote>
+<p>js 全称 jacascript，是一门浏览器脚本语言，广泛应用在 web 页面开发，主要功能使当前网页添加动态向效果(UI 交互),目的为了让用户有更好的浏览体验</p>
+</blockquote>
+<h3 id="单线程语言"><a href="#单线程语言" class="headerlink" title="单线程语言"></a>单线程语言</h3><blockquote>
+<p>js 就是一门单线程语言，作为浏览器的脚本语言，js 主要的用途就是用来做用户交互的，操作 html 结构，决定了它就是一门单线程(每次只做一件事 不能同步进行)</p>
+</blockquote>
+<blockquote>
+<p>多线程语言，处理多个任务(同时做多个任务)，类似 Java、c++、python</p>
+</blockquote>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">单线程语言优缺点；</span><br><span class="line">    优点就是易于理解、不需要考虑太多的情况，缺点是中途发生错误，后续代码无法进行(效率低)(例子:一个收费站只有一个出口)</span><br><span class="line"></span><br><span class="line">多线程语言优缺点:</span><br><span class="line">    优点效率高、性能高；缺点就是容易出现各种各种bug(错误信息);</span><br><span class="line">    (例子:一个收费站有多个出口)</span><br></pre></td></tr></table></figure>
+
+<h3 id="js-三大主体"><a href="#js-三大主体" class="headerlink" title="js 三大主体"></a>js 三大主体</h3><ul>
+<li>ECMAScript(ECMA 组织定制一套标准)</li>
+<li>DOM (document object model 文档对象模型)</li>
+<li>BOM(browser object model 浏览器对象模型)</li>
+</ul>
+<h3 id="js-引入方式"><a href="#js-引入方式" class="headerlink" title="js 引入方式"></a>js 引入方式</h3><ul>
+<li>内嵌式</li>
+<li>行内式</li>
+<li>外链式</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/18/js%E5%85%A5%E9%97%A8-ECMA/js%E5%85%A5%E9%97%A8/" data-id="clo32argg001tt0wb3zxt1quc" data-title="js入门" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-移动端/移动端知识" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/12/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9F%A5%E8%AF%86/" class="article-date">
+  <time class="dt-published" datetime="2023-09-12T03:27:30.000Z" itemprop="datePublished">2023-09-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/12/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9F%A5%E8%AF%86/">移动端知识</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h2><h3 id="物理像素"><a href="#物理像素" class="headerlink" title="物理像素"></a>物理像素</h3><blockquote>
+<p>每一块屏幕都是由一个一个的方块组成，这些方块名字就是物理像素点(设备像素、屏幕分辨率)，以 iPhone6 作为例子，屏幕的分辨率 750*1334，指屏幕的宽度(水平)有 750 个像素点，高度(垂直)有 1334 个像素点</p>
+</blockquote>
+<h3 id="css-像素"><a href="#css-像素" class="headerlink" title="css 像素"></a>css 像素</h3><blockquote>
+<p>css 中像素叫做逻辑像素，也可以叫做设备的独立像素</p>
+</blockquote>
+<h3 id="viewport-视口"><a href="#viewport-视口" class="headerlink" title="viewport 视口"></a>viewport 视口</h3><blockquote>
+<p>浏览器显示页面大小内容的屏幕区域就叫做视口，它们分为三种视口</p>
+</blockquote>
+<h4 id="布局视口-layout-viewport"><a href="#布局视口-layout-viewport" class="headerlink" title="布局视口 layout viewport"></a>布局视口 layout viewport</h4><blockquote>
+<p>布局视口是页面布局的基准窗口，pc 端中布局视口等于当前浏览器的窗口大小; 移动端中布局视口被赋予一个默认值，这个值指的是设备的逻辑分辨率(可能会大很多)，所以 pc 端在手机上显示，内部元素会看起来很小，不利于观看;</p>
+</blockquote>
+<blockquote>
+<p>针对移动端浏览器都会设置一个默认的 viewport 元标签(虚拟的布局视口)，默认大小为 980px(布局视口 iPhone6 作为例子)</p>
+</blockquote>
+<blockquote>
+<p>为什么是 980px? 以前 pc 的网页版心是以 980 为主，设置 980 布局视口为了在移动端经量能够看到当前网页的主要内容</p>
+</blockquote>
+<h4 id="视觉视口-visual-viewport"><a href="#视觉视口-visual-viewport" class="headerlink" title="视觉视口 visual viewport"></a>视觉视口 visual viewport</h4><blockquote>
+<p>就是手机屏幕所能看到的区域(不需要滑动屏幕)，当用户对浏览器进行缩放，不会改变布局视口大小，改变的只是视觉视口</p>
+</blockquote>
+<h4 id="理想视口-完美视口-ideal-viewport"><a href="#理想视口-完美视口-ideal-viewport" class="headerlink" title="理想视口(完美视口) ideal viewport"></a>理想视口(完美视口) ideal viewport</h4><blockquote>
+<p>为了使网页在移动端有最理想的浏览和阅读宽度而设置的，使布局视口和视觉视口宽度保持一致(比例相同)，需要手动设置 viewport 元标签(meta 标签)</p>
+</blockquote>
+<blockquote>
+<p>布局视口的宽度 等于 设备的逻辑像素的时候，这个就是理想视口(完美视口)</p>
+</blockquote>
+<blockquote>
+<p>注意理想视口的宽度 &#x3D; 设置横向分辨率 &#x2F; DPR (设备像素比)</p>
+</blockquote>
+<h4 id="设置视口-设置-meta"><a href="#设置视口-设置-meta" class="headerlink" title="设置视口 (设置 meta)"></a>设置视口 (设置 meta)</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">viewport 的六种设置</span><br><span class="line">1.width 定义布局视口的宽度(单位为像素)，值为正整数或者 device-width(设备宽度逻辑像素 ，单位为px)</span><br><span class="line"></span><br><span class="line">2.height定义布局视口的高度(单位为像素)，值为正整数或者 device-width(设备高度逻辑像素 ，单位为px)</span><br><span class="line"></span><br><span class="line">3. initial-scale 页面缩放值,取值范围(0.0 - 10.0)</span><br><span class="line"></span><br><span class="line">4. minimum-scale 定义缩小最小比例，它必须要小于或者等于maximun-scale的值,取值范围(0.0 - 10.0)</span><br><span class="line"></span><br><span class="line">5. maximum-scale 定义放大最大比例，它必须要大于或者等于minimun-scale的值,取值范围(0.0 - 10.0)</span><br><span class="line"></span><br><span class="line">6. user-scalable  是否允许用户缩放操作，默认yes，否no,注意ios10.0以上的系统的手机不支持此属性，需要结合js事件处理</span><br></pre></td></tr></table></figure>
+
+<h4 id="媒体查询-响应式布局"><a href="#媒体查询-响应式布局" class="headerlink" title="媒体查询 (响应式布局)"></a>媒体查询 (响应式布局)</h4><blockquote>
+<p>根据不同设备、不同尺寸对页面元素设置不同的样式，用于一个网站适配 pc 端、ipad 端、移动端，页面会根据媒体查询设定的宽度重新布置样式</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    媒体类型</span></span><br><span class="line"><span class="comment">        all 用于所有的设置</span></span><br><span class="line"><span class="comment">        screen  用于电脑、手机、平板等设备</span></span><br><span class="line"><span class="comment">        print   用于打印机或者打印机预览</span></span><br><span class="line"><span class="comment">        speech  用于屏幕阅读器</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    连接符(连接多个媒体特征作为当前媒体查询的条件)</span></span><br><span class="line"><span class="comment">        and     将多个媒体特征连接</span></span><br><span class="line"><span class="comment">        not     排除某个媒体特征</span></span><br><span class="line"><span class="comment">        only    指定某个媒体特征</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    媒体特征</span></span><br><span class="line"><span class="comment">        width   定义输出设备的可视宽度</span></span><br><span class="line"><span class="comment">        max-width   定义最大可视宽度</span></span><br><span class="line"><span class="comment">        min-width   定义最小可视宽度</span></span><br><span class="line"><span class="comment">        orientation 定义设备方向</span></span><br><span class="line"><span class="comment">            portrait    竖屏</span></span><br><span class="line"><span class="comment">            landscape   横屏    </span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@media</span> 媒体类型 连接符 (媒体特征) &#123;</span><br><span class="line">  <span class="selector-tag">html</span> &#123;</span><br><span class="line">    <span class="comment">/* 新样式 */</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="comment">/* 新样式 */</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/12/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9F%A5%E8%AF%86/" data-id="clo32arh5002st0wbe2dmdjrj" data-title="移动端知识" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-css进阶/动画" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/07/css%E8%BF%9B%E9%98%B6/%E5%8A%A8%E7%94%BB/" class="article-date">
+  <time class="dt-published" datetime="2023-09-07T04:05:20.000Z" itemprop="datePublished">2023-09-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/07/css%E8%BF%9B%E9%98%B6/%E5%8A%A8%E7%94%BB/">动画</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="animation-动画"><a href="#animation-动画" class="headerlink" title="animation 动画"></a>animation 动画</h3><blockquote>
+<p>css 动画和过渡动画相同点:可以控制元素从初始阶段到最终阶段内发生的变化，例如动画时长、动画效果、动画的等待时间</p>
+</blockquote>
+<blockquote>
+<p>css 动画和过渡动画的不同点:动画对元素变化的方式有更多的控制和选择，例如控制动画开始到结束之间的效果，过渡动画是控制不了的，一旦开始就无法停止，动画还可以使用 js 控制动画暂停和开始</p>
+</blockquote>
+<h3 id="关键帧"><a href="#关键帧" class="headerlink" title="关键帧"></a>关键帧</h3><blockquote>
+<p>帧，就是动画中最小的影像画面，相当于是电影胶片的每一个镜头</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 注意，选择符的顺序是可以倒序的，相当于是倒着看视频 */</span></span><br><span class="line"><span class="keyword">@keyframes</span> 动画名称 &#123;</span><br><span class="line">  <span class="comment">/* 关键帧选择符 */</span></span><br><span class="line">  <span class="number">0%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">10%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/* ···更多细节 */</span></span><br><span class="line">  <span class="number">100%</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> 动画名称 &#123;</span><br><span class="line">  <span class="comment">/* 关键帧选择符 */</span></span><br><span class="line">  <span class="selector-tag">from</span>&#123;</span><br><span class="line">    <span class="comment">/* 相当于0% */</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">to</span>&#123;</span><br><span class="line">    <span class="comment">/* 相当于100% */</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-属性-复合属性"><a href="#animation-属性-复合属性" class="headerlink" title="animation 属性(复合属性)"></a>animation 属性(复合属性)</h3><blockquote>
+<p>想要元素拥有动画效果，必须填写此属性，并且还需要加上关键帧动画名</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: 动画名 动画时长 | 动画播放频率 | 动画延迟播放 | 动画播放的方向 |</span><br><span class="line">    播放状态 | 填充模式 | 播放次数;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-name-动画名称"><a href="#animation-name-动画名称" class="headerlink" title="animation-name 动画名称"></a>animation-name 动画名称</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* none默认值，即无动画 */</span></span><br><span class="line">  <span class="attribute">animation-name</span>: 动画名称<span class="number">1</span>, 动画名称<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-duration-动画时长"><a href="#animation-duration-动画时长" class="headerlink" title="animation-duration 动画时长"></a>animation-duration 动画时长</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* s 代表的秒 ,ms代表的是毫秒，1000ms等于1s*/</span></span><br><span class="line">  <span class="attribute">animation-duration</span>: <span class="number">1s</span> | <span class="number">1000ms</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-direction-动画播放方向"><a href="#animation-direction-动画播放方向" class="headerlink" title="animation-direction 动画播放方向"></a>animation-direction 动画播放方向</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    normal 默认值，0%-100%</span></span><br><span class="line"><span class="comment">    reverse 倒序播放，100%-0%</span></span><br><span class="line"><span class="comment">    alternate 交替播放 0%-100%播放完之后，从100%-0%继续播放</span></span><br><span class="line"><span class="comment">    alternate-reverse 倒序交替播放 100%-0%播放完之后，从0%-100%继续播放</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">animation-direction</span>: normal | reverse | alternate | alternate-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-iteration-count-动画播放次数"><a href="#animation-iteration-count-动画播放次数" class="headerlink" title="animation-iteration-count 动画播放次数"></a>animation-iteration-count 动画播放次数</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 默认值是1，infinite无限循环播放 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">animation-iteration-count</span>: <span class="number">1</span> | infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-delay-动画延时播放"><a href="#animation-delay-动画延时播放" class="headerlink" title="animation-delay 动画延时播放"></a>animation-delay 动画延时播放</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* s 代表的秒 ,ms代表的是毫秒，默认是0秒/^[\u4E00-\u9FA5](字第)([0-9a-zA-Z]&#123;4,8&#125;)(号?)$/*/</span></span><br><span class="line">  <span class="attribute">animation-delay</span>: <span class="number">0s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-timing-function-动画频率-速度曲线"><a href="#animation-timing-function-动画频率-速度曲线" class="headerlink" title="animation-timing-function 动画频率(速度曲线)"></a>animation-timing-function 动画频率(速度曲线)</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/*</span></span><br><span class="line"><span class="comment">    linear  匀速(默认值)</span></span><br><span class="line"><span class="comment">    ease    丝滑过渡(快)</span></span><br><span class="line"><span class="comment">    ease-in 由慢变快</span></span><br><span class="line"><span class="comment">    ease-out 由块变慢</span></span><br><span class="line"><span class="comment">    ease-in-out 由慢变快，在变慢</span></span><br><span class="line"><span class="comment">    steps(number) 逐帧动画，参数为数字(帧数)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">animation-timing-function</span>: linear | ease |ease-in | ease-out |ease-in-out</span><br><span class="line">    |<span class="built_in">steps</span>(number);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-play-state-动画状态"><a href="#animation-play-state-动画状态" class="headerlink" title="animation-play-state 动画状态"></a>animation-play-state 动画状态</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    running 播放状态(默认)</span></span><br><span class="line"><span class="comment">    paused   停止状态</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">  <span class="attribute">animation-play-state</span>: paused | running;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="animation-fill-mode-动画填充模式"><a href="#animation-fill-mode-动画填充模式" class="headerlink" title="animation-fill-mode 动画填充模式"></a>animation-fill-mode 动画填充模式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    none    无填充模式</span></span><br><span class="line"><span class="comment">    forwards 动画结束之后，结尾的动画样式属性将会继续应用在元素上(保留结束动画状态)(定义结束)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    backwards   动画开始前采用第一个关键帧中定义的值,遇到animation-delay等待的时间会继续保留当前元素的样式作为第一个关键帧中定义的值(定义开始)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    both    动画将遵循forwards和backwards的规则(两种状态都会存在)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">animation-fill-mode</span>: none | forwards | backwards | both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="逐帧动画-steps"><a href="#逐帧动画-steps" class="headerlink" title="逐帧动画 steps()"></a>逐帧动画 steps()</h3><blockquote>
+<p>又名定格动画，它的原理就是根据不同的图像连续播放，从而产生动画效果(每一个图像代表的就是一帧)</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    参数1 </span></span><br><span class="line"><span class="comment">      指定steps函数中的间隔数量(正整数)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    参数2(可选)</span></span><br><span class="line"><span class="comment">      一共两个值，start和end(默认值)，作用在指定每一个间隔的起点或是终点阶段的变化</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">      start 第一帧是第一步动画结束</span></span><br><span class="line"><span class="comment">      end   第一帧是第一步动画开始</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">animation-timing-function</span>: <span class="built_in">steps</span>(参数<span class="number">1</span>, 参数<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/07/css%E8%BF%9B%E9%98%B6/%E5%8A%A8%E7%94%BB/" data-id="clo32arfg000at0wb9ysv5umz" data-title="动画" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-css进阶/形变" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/" class="article-date">
+  <time class="dt-published" datetime="2023-09-06T12:00:30.000Z" itemprop="datePublished">2023-09-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/">形变</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="transform-形变"><a href="#transform-形变" class="headerlink" title="transform 形变"></a>transform 形变</h2><blockquote>
+<p>主要用于元素平移、旋转、缩放, 对于变形的元素, 它会有自己的堆叠上下文, 经过缩放、平移等形变外型看似变化了, 但是实际占用的大小位置是不变的</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    translate 平移</span></span><br><span class="line"><span class="comment">    rotate 旋转</span></span><br><span class="line"><span class="comment">    scale 缩放</span></span><br><span class="line"><span class="comment">    skew 变形</span></span><br><span class="line"><span class="comment">    none 默认值, 无形变</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    注意: 形变分为两种模式, 2D和3D, 默认为2D模式, transform 可以存在多个形变类型直接使用空格连接即刻</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attribute">transform</span>: translate | rotate | scale | skew | none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="translate-平移-当前元素位置进行平移"><a href="#translate-平移-当前元素位置进行平移" class="headerlink" title="translate 平移 (当前元素位置进行平移)"></a>translate 平移 (当前元素位置进行平移)</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  单位: px, %, 支持负数 </span></span><br><span class="line"><span class="comment">  只传一个值, 默认就是x轴(水平方向)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(x, y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="translate-单独设置水平或者垂直方向"><a href="#translate-单独设置水平或者垂直方向" class="headerlink" title="translate 单独设置水平或者垂直方向"></a>translate 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  translateX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  translateY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateX</span>() | <span class="built_in">translateY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="rotate-旋转"><a href="#rotate-旋转" class="headerlink" title="rotate 旋转"></a>rotate 旋转</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* deg 度数, 默认顺时针, 负数才是逆时针 */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="rotate-单独设置水平或者垂直方向"><a href="#rotate-单独设置水平或者垂直方向" class="headerlink" title="rotate 单独设置水平或者垂直方向"></a>rotate 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  rotateX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  rotateY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">rotateX</span>() | <span class="built_in">rotateY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="元素中心点-变形的原点"><a href="#元素中心点-变形的原点" class="headerlink" title="元素中心点 (变形的原点)"></a>元素中心点 (变形的原点)</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    旋转的时候, 默认为center</span></span><br><span class="line"><span class="comment">    可以接收三个值, 第一个值就是x轴, 第二个值就是y轴, 第三个就是z轴, 默认值 (50%, 50%, 0)</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attribute">transform-origin</span>: left | right | bottom | center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="scale-缩放"><a href="#scale-缩放" class="headerlink" title="scale 缩放"></a>scale 缩放</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">    第一个值代表水平方向(x轴), 可以为小数, 1代表默认大小</span></span><br><span class="line"><span class="comment">    第二个值代表垂直方向(y轴), 可以为小数, 1代表默认大小1倍数</span></span><br><span class="line"><span class="comment">    只写一个值的时候, 默认是x和y轴同时设置缩放</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="scale-单独设置水平或者垂直方向"><a href="#scale-单独设置水平或者垂直方向" class="headerlink" title="scale 单独设置水平或者垂直方向"></a>scale 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  scaleX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  scaleY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scaleX</span>() | <span class="built_in">scaleY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="skew-扭曲"><a href="#skew-扭曲" class="headerlink" title="skew 扭曲"></a>skew 扭曲</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  第一个值表示水平轴扭曲(x轴)</span></span><br><span class="line"><span class="comment">  第二个值表示垂直轴扭曲(y轴)</span></span><br><span class="line"><span class="comment">  只写了一个值的时候, 默认是x轴, y轴是为0</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>, <span class="number">30deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="skew-单独设置水平或者垂直方向"><a href="#skew-单独设置水平或者垂直方向" class="headerlink" title="skew 单独设置水平或者垂直方向"></a>skew 单独设置水平或者垂直方向</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  skewX  代表水平轴(x轴)</span></span><br><span class="line"><span class="comment">  skewY  代表垂直轴(y轴)</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">skewX</span>() | <span class="built_in">skewY</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="透视-perspective"><a href="#透视-perspective" class="headerlink" title="透视 perspective"></a>透视 perspective</h3><blockquote>
+<p>开启 3d 视觉效果, 配合 transform 的属性使用, perspective 类似电影的投屏, 视距越大, 当前屏幕距离 3d 物体越远</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 定义透视两种方法 */</span></span><br><span class="line"><span class="comment">/* 第一种单独设置perspective, 初次渲染时, 投影到屏幕上 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">perspective</span>: <span class="number">500px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 第二种设置在 transform 属性中, 由transform的变化而进行重新渲染图形 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">perspective</span>(<span class="number">500px</span>) <span class="built_in">rotateY</span>(<span class="number">30deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">注意:</span><br><span class="line">  perspective 属性如果要单独设置, 一般设置在爷爷元素上, 父亲元素设置开启3d属性 transform-style: perserve-3d, 子元素设置3d形变</span><br><span class="line"></span><br><span class="line">爷爷元素 &#123;</span><br><span class="line">  perspective: 800px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">父亲元素 &#123;</span><br><span class="line">  # 3d效果开启之后, 所有的子元素都可以以3d效果呈现出来</span><br><span class="line">  transform-style: perserve-3d;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">子元素 &#123;</span><br><span class="line">  transform: translateZ(30px)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;爷爷&gt;</span><br><span class="line">  &lt;父亲&gt;</span><br><span class="line">    &lt;子&gt;&lt;/子&gt;</span><br><span class="line">    &lt;子&gt;&lt;/子&gt;</span><br><span class="line">    &lt;子&gt;&lt;/子&gt;</span><br><span class="line">  &lt;/父亲&gt;</span><br><span class="line">&lt;/爷爷&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="过渡效果-transition"><a href="#过渡效果-transition" class="headerlink" title="过渡效果 transition"></a>过渡效果 transition</h3><blockquote>
+<p>是一个元素的过渡控制在一段时间内由初始状态转变成结束状态, 可以控制元素的过渡时间、速度曲线</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  过渡属性</span></span><br><span class="line"><span class="comment">    指的是css的实现, 类似width、transform、color等等, display不支持过渡效果, 默认all所有属性</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  过渡时间 </span></span><br><span class="line"><span class="comment">    是必须填写, 其他可以不填 </span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">  过渡速度曲线</span></span><br><span class="line"><span class="comment">    liner: 线性过渡 (匀速, 默认)</span></span><br><span class="line"><span class="comment">    ease: 平滑</span></span><br><span class="line"><span class="comment">    ease-in: 由慢到快</span></span><br><span class="line"><span class="comment">    ease-out: 由快到慢</span></span><br><span class="line"><span class="comment">    ease-in-out: 由慢到快再到慢</span></span><br><span class="line"><span class="comment">    贝塞尔曲线</span></span><br><span class="line"><span class="comment">  </span></span><br><span class="line"><span class="comment">  等待过渡时间</span></span><br><span class="line"><span class="comment">    过渡效果何时开始, 单位为 s (秒), 默认0</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="attribute">transition</span>: 过渡属性 | 过渡时间 | 过渡速度曲线 | 等待过渡时间;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/* 设置多个属性 */</span></span><br><span class="line">  <span class="comment">/* transition: height 1s, width 3s,n,,,, */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/06/css%E8%BF%9B%E9%98%B6/%E5%BD%A2%E5%8F%98/" data-id="clo32arft000mt0wbcgttdnqn" data-title="形变" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-css进阶/预处理器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" class="article-date">
+  <time class="dt-published" datetime="2023-09-04T06:35:30.000Z" itemprop="datePublished">2023-09-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/">预处理器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="预处理器"><a href="#预处理器" class="headerlink" title="预处理器"></a>预处理器</h2><blockquote>
+<p>css 并不是一个编程语言(编程语言:判断、循环、变量、函数)，预处理器专门针对 css 研发的一种编程语言，进行 css 的样式设计，最后在编译成 css 文件，常见的预处理器 sass、less</p>
+</blockquote>
+<h3 id="sass"><a href="#sass" class="headerlink" title="sass"></a>sass</h3><blockquote>
+<p>scss 本来就是 sass 的一个升级版，可以看作像 css3 其实就是 css 升级版的意思，scss 是 sass 的第三代语法，scss 可以使用判断、循环、变量、函数等操作，文件的后缀名为 scss(编译之前)，最后编译出去的文件是 css 文件(编译之后)</p>
+</blockquote>
+<h3 id="单文件编译"><a href="#单文件编译" class="headerlink" title="单文件编译"></a>单文件编译</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sass --watch ./scss/index.scss:./css/index.css</span><br><span class="line"></span><br><span class="line">||</span><br><span class="line"></span><br><span class="line">sass 命令 监听 编译之前文件地址:编译之后文件地址</span><br></pre></td></tr></table></figure>
+
+<h3 id="map-和-sass-cache-文件的作用"><a href="#map-和-sass-cache-文件的作用" class="headerlink" title=".map 和 .sass-cache 文件的作用"></a>.map 和 .sass-cache 文件的作用</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.map</span><br><span class="line">    css文件内容导航到对应的scss文件位置，方便开发人员定位到scss的修改位置</span><br><span class="line"></span><br><span class="line">.sass-cache</span><br><span class="line">    缓存分析文档/文件，在不修改的情况下，不需要编译整个scss文件(不再编译scss)，除非修改内容</span><br></pre></td></tr></table></figure>
+
+<h3 id="多文件编译"><a href="#多文件编译" class="headerlink" title="多文件编译"></a>多文件编译</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sass --watch .scss:./css</span><br><span class="line">||</span><br><span class="line">sass命令 监听命令 编译前文件夹路径:编译后文件夹路径</span><br></pre></td></tr></table></figure>
+
+<h3 id="导入其他样式-提公共部分、去除默认样式"><a href="#导入其他样式-提公共部分、去除默认样式" class="headerlink" title="导入其他样式(提公共部分、去除默认样式)"></a>导入其他样式(提公共部分、去除默认样式)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import 需要导入的scss路径;</span><br></pre></td></tr></table></figure>
+
+<h3 id="忽略编译-不需要编译成-css-文件"><a href="#忽略编译-不需要编译成-css-文件" class="headerlink" title="忽略编译(不需要编译成 css 文件)"></a>忽略编译(不需要编译成 css 文件)</h3><blockquote>
+<p>在 scss 文件名前面加 下划线</p>
+</blockquote>
+<h3 id="scss-的语法"><a href="#scss-的语法" class="headerlink" title="scss 的语法"></a>scss 的语法</h3><h4 id="变量-scss-所有变量以-符号开头"><a href="#变量-scss-所有变量以-符号开头" class="headerlink" title="变量(scss 所有变量以$ 符号开头)"></a>变量(scss 所有变量以$ 符号开头)</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义变量</span></span><br><span class="line"><span class="variable">$w</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">//使用变量</span></span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$w</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">120px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">$w</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="comment">/* 元素嵌套 */</span></span><br><span class="line">  <span class="selector-tag">header</span> &#123;</span><br><span class="line">    <span class="selector-tag">p</span> &#123;</span><br><span class="line">      <span class="comment">/* css属性嵌套  font-size font-weight*/</span></span><br><span class="line">      <span class="attribute">font</span>: &#123;</span><br><span class="line">        size: <span class="number">12px</span>;</span><br><span class="line">        weight: <span class="number">600</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">footer</span> &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="继承-extend"><a href="#继承-extend" class="headerlink" title="继承(@extend)"></a>继承(@extend)</h4><blockquote>
+<p>继承另一个选择器的样式(复用样式)</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将要复用的选择器</span></span><br><span class="line"><span class="selector-class">.com</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="comment">//@extend 选择器</span></span><br><span class="line">  <span class="keyword">@extend</span> .com;</span><br><span class="line">  <span class="comment">//@extend 其他选择器</span></span><br><span class="line">  <span class="comment">//···</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bolder;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="父选择器"><a href="#父选择器" class="headerlink" title="父选择器 (&amp;)"></a>父选择器 (&amp;)</h4><blockquote>
+<p>在 scss 嵌套规则中，使用当前元素的伪类、伪元素，需要在当前元素{}内部写&amp;符号，表示当前元素</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  &amp;<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="comment">//&amp;表示当前元素</span></span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="comment">//&amp;表示当前元素</span></span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;伪元素&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="comment">//&amp;表示当前元素</span></span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;伪元素&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="模块复用、传参-mixin、-include"><a href="#模块复用、传参-mixin、-include" class="headerlink" title="模块复用、传参(@mixin、@include)"></a>模块复用、传参(@mixin、@include)</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//不需要传参数和@extend没有区别</span></span><br><span class="line"><span class="keyword">@mixin</span> com(<span class="variable">$value1</span>, <span class="variable">$value2</span>: black) &#123;</span><br><span class="line">  <span class="comment">//$value1 参数，使用模块的时候传入的值(12px、18px)</span></span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$value1</span>;</span><br><span class="line">  <span class="comment">//$value2 参数，默认值为black，使用模块的时候传入的值(red)</span></span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$value2</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> com(<span class="number">12px</span>, red);</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  <span class="keyword">@include</span> com(<span class="number">12px</span>);</span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$a</span>: <span class="number">22.5px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span> + <span class="variable">$a</span>;</span><br><span class="line">  <span class="attribute">height</span>: (<span class="number">100px</span>/<span class="number">11.5px</span>)+<span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="自定义函数-function、-return"><a href="#自定义函数-function、-return" class="headerlink" title="自定义函数 (@function、@return)"></a>自定义函数 (@function、@return)</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义函数</span></span><br><span class="line"><span class="keyword">@function</span> dprValue(<span class="variable">$dpr</span>: <span class="number">1</span>, <span class="variable">$value</span>) &#123;</span><br><span class="line">  <span class="comment">//函数的返回值</span></span><br><span class="line">  <span class="keyword">@return</span> <span class="variable">$dpr</span> * <span class="variable">$value</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="built_in">dprValue</span>(<span class="number">2</span>, <span class="number">100px</span>);</span><br><span class="line">  <span class="attribute">height</span>: <span class="built_in">dprValue</span>(<span class="number">2</span>, <span class="number">100px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="less"><a href="#less" class="headerlink" title="less"></a>less</h3><h4 id="变量"><a href="#变量" class="headerlink" title="变量(@)"></a>变量(@)</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@w:</span> <span class="number">100px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">@w</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="嵌套-父选择器"><a href="#嵌套-父选择器" class="headerlink" title="嵌套 &#x2F; 父选择器"></a>嵌套 &#x2F; 父选择器</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="selector-tag">header</span> &#123;</span><br><span class="line">    &amp;<span class="selector-pseudo">:hover</span> &gt; <span class="selector-tag">p</span> &#123;</span><br><span class="line">      <span class="attribute">color</span>: blue;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@w:</span> <span class="number">100px</span>;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="variable">@w:</span> <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="variable">@w</span>; <span class="comment">//100px (就近原则)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="模块复用"><a href="#模块复用" class="headerlink" title="模块复用"></a>模块复用</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义模块</span></span><br><span class="line"><span class="comment">//带参数</span></span><br><span class="line"><span class="selector-class">.com</span> (<span class="variable">@value</span>:center) &#123;</span><br><span class="line">  <span class="attribute">display</span>: center;</span><br><span class="line">  <span class="attribute">justify-content</span>: <span class="variable">@value</span>;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//不带参数</span></span><br><span class="line"><span class="selector-class">.com2</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">//使用模块</span></span><br><span class="line">  <span class="selector-class">.com</span>(space-between);</span><br><span class="line">  <span class="selector-class">.com2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="built_in">if</span>((<span class="number">2</span> &gt; <span class="number">1</span>), <span class="number">0</span>, <span class="number">3px</span>);</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Less-和-Scss-有什么区别"><a href="#Less-和-Scss-有什么区别" class="headerlink" title="Less 和 Scss 有什么区别"></a>Less 和 Scss 有什么区别</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">不同点:</span><br><span class="line">1.less 后缀名为.less ,scss后缀名为.scss;</span><br><span class="line">2.scss 运行环境服务端(node、ruby、dart),less 运行环境可以在浏览器中运行(客户端，less.js由js编写)</span><br><span class="line">3.less 使用@符号作为变量名，scss使用$符号</span><br><span class="line">4.scss 拥有if、for、each控制指令，less没有</span><br><span class="line">5.scss 整体功能比less强大，算是一门真正的编程语言，less只是自定义语法的解析器(css)</span><br><span class="line">6.scss 拥有工具库 Compass，less拥有UI框架 Bootstrap</span><br><span class="line"></span><br><span class="line">相同点:</span><br><span class="line">1.都是css预处理器</span><br><span class="line">2.都可以定义变量、函数、复用模块</span><br><span class="line">3.为了让css操作更加灵活、拓展功能</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/04/css%E8%BF%9B%E9%98%B6/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" data-id="clo32arg50018t0wb5tzg7mzp" data-title="预处理器" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-css进阶/flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/08/31/css%E8%BF%9B%E9%98%B6/flex/" class="article-date">
+  <time class="dt-published" datetime="2023-08-31T03:24:30.000Z" itemprop="datePublished">2023-08-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/08/31/css%E8%BF%9B%E9%98%B6/flex/">flex</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="flex-弹性盒子-flex-布局"><a href="#flex-弹性盒子-flex-布局" class="headerlink" title="flex 弹性盒子(flex 布局)"></a>flex 弹性盒子(flex 布局)</h2><blockquote>
+<p>css3 的新布局方式，是一种当前页面需要适应不同屏幕大小，以及设备类型时,确保元素拥有合适的行为进行布局方式</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    主轴    元素默认沿着主轴进行排列(默认的x轴)</span></span><br><span class="line"><span class="comment">    交叉轴(侧轴)    垂直于flex元素放置方向的轴(类似y轴)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    注意:flex布局可以更改主轴</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="flex-特点"><a href="#flex-特点" class="headerlink" title="flex 特点"></a>flex 特点</h3><ul>
+<li>弹性盒子由弹性容器和弹性子元素组成</li>
+<li>弹性容器设置 css 属性 display:flex 即可定义为弹性容器</li>
+<li>弹性容器中可以包含一个或者多个弹性子元素</li>
+<li>如果子元素的高度没有设置，高度则由弹性盒子是默认分配的</li>
+</ul>
+<h3 id="定义-flex-容器的主轴-flex-direction"><a href="#定义-flex-容器的主轴-flex-direction" class="headerlink" title="定义 flex 容器的主轴 flex-direction"></a>定义 flex 容器的主轴 flex-direction</h3><blockquote>
+<p>该属性设置弹性容器的主轴方向</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    row             默认值，flex容器主轴为水平方向(向右)</span></span><br><span class="line"><span class="comment">    row-reverse     flex容器主轴为倒序水平方向(向左)</span></span><br><span class="line"><span class="comment">    column          flex容器主轴为垂直方向(向下)</span></span><br><span class="line"><span class="comment">    column-reverse  flex容器主轴为倒序垂直方向(向上)</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-direction</span>: row | row-reverse | column | column-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="弹性子元素换行-flex-wrap"><a href="#弹性子元素换行-flex-wrap" class="headerlink" title="弹性子元素换行 flex-wrap"></a>弹性子元素换行 flex-wrap</h3><blockquote>
+<p>宽度不够所有子元素排列的时候，可以设置换行排列</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    nowrap  默认值,强制不换行</span></span><br><span class="line"><span class="comment">    wrap    允许换行</span></span><br><span class="line"><span class="comment">    wrap-reverse    允许换行并倒序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="弹性容器主轴方式子元素的布局方式-justify-content"><a href="#弹性容器主轴方式子元素的布局方式-justify-content" class="headerlink" title="弹性容器主轴方式子元素的布局方式 justify-content"></a>弹性容器主轴方式子元素的布局方式 justify-content</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    flex-start  </span></span><br><span class="line"><span class="comment">        默认值，flex子元素紧靠主轴的初始边进行排列</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    flex-end    </span></span><br><span class="line"><span class="comment">        跟flex-start相反，flex子元素紧靠主轴的结束边进行排列(终边)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    center      </span></span><br><span class="line"><span class="comment">        将所有的flex子元素看作是一个整体，将这个整体居中排列到主轴中心点</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    space-between </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素会紧靠边界，其余flex子元素会在中心排列(间隙相同)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    space-around </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素距离边界的间隙与中间flex子元素间隙比列 1:2</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    space-evenly    </span></span><br><span class="line"><span class="comment">        所有flex子元素之间间隙相同</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around |</span><br><span class="line">  space-evenly;</span><br></pre></td></tr></table></figure>
+
+<h3 id="交叉轴的子元素排列方式-单行子元素-align-items"><a href="#交叉轴的子元素排列方式-单行子元素-align-items" class="headerlink" title="交叉轴的子元素排列方式(单行子元素) align-items"></a>交叉轴的子元素排列方式(单行子元素) align-items</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    center  居中对齐，将flex子元素的中点与所在的交叉轴进行中点对齐</span></span><br><span class="line"><span class="comment">    flex-start  默认值，flex子元素在交叉轴紧靠初始边进行排列</span></span><br><span class="line"><span class="comment">    flex-end    flex子元素在交叉轴紧靠结束边进行排列</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  align-item: center | flex-start | flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="交叉轴的子元素排列方式-多行子元素-align-content"><a href="#交叉轴的子元素排列方式-多行子元素-align-content" class="headerlink" title="交叉轴的子元素排列方式(多行子元素) align-content"></a>交叉轴的子元素排列方式(多行子元素) align-content</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    center  居中对齐，将flex子元素的中点与所在的交叉轴进行中点对齐</span></span><br><span class="line"><span class="comment">    flex-start  flex子元素在交叉轴紧靠初始边进行排列</span></span><br><span class="line"><span class="comment">    flex-end    flex子元素在交叉轴紧靠结束边进行排列</span></span><br><span class="line"><span class="comment">    stretch     默认值，交叉轴的剩余分配，自空间动平均到每个弹性元素上，直到边与边重合</span></span><br><span class="line"><span class="comment">    space-between </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素会紧靠边界，其余flex子元素会在中心排列(间隙相同)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    space-around </span></span><br><span class="line"><span class="comment">        第一个和最后一个flex子元素距离边界的间隙与中间flex子元素间隙比列 1:2</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    space-evenly    </span></span><br><span class="line"><span class="comment">        所有flex子元素之间间隙相同</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">align-content</span>: center | flex-start | flex-end | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="定义指定的-flex-子元素交叉轴对齐方式-align-self"><a href="#定义指定的-flex-子元素交叉轴对齐方式-align-self" class="headerlink" title="定义指定的 flex 子元素交叉轴对齐方式 align-self"></a>定义指定的 flex 子元素交叉轴对齐方式 align-self</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: center | flex-start | flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="缩减因子-flex-shrink"><a href="#缩减因子-flex-shrink" class="headerlink" title="缩减因子 flex-shrink"></a>缩减因子 flex-shrink</h3><blockquote>
+<p>如果当前的 flex 盒子宽度不够的子元素排列的情况下，会缩减子元素的宽度，缩减因子设置的值按比例缩减宽度</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">    默认值为1，不能为负数，可以使用数字、小数点、值越大、缩减的比例越大</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-shrink</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(1)计算当前超出空间可缩减的大小(缩减空间)</span><br><span class="line">公式:   总超出空间 * (所有flex子元素flex-shrink总和 &gt;=1 ? 1:所有flex子元素flex-shrink总和)</span><br><span class="line"></span><br><span class="line">(2) 计算每一个flex子元素缩减的大小</span><br><span class="line">公式: 缩减空间 * (单个flex子元素flex-shrink / 所有flex子元素flex-shrink总和)</span><br></pre></td></tr></table></figure>
+
+<h3 id="增长因子-flex-grow"><a href="#增长因子-flex-grow" class="headerlink" title="增长因子 flex-grow"></a>增长因子 flex-grow</h3><blockquote>
+<p>弹性容器出现多余空间，设置 flex 子元素的增长因子，默认值为 0，不能为负数，值越大，增长值就越高</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-grow</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(1) 单个flex子元素的增长空间(多出的空间)</span><br><span class="line">公式 : 多余空间 * (单个flex子元素-grow / 所有的flex子元素flex-grow)</span><br></pre></td></tr></table></figure>
+
+<h3 id="定义-flex-子元素的宽度-flex-basis"><a href="#定义-flex-子元素的宽度-flex-basis" class="headerlink" title="定义 flex 子元素的宽度 flex-basis"></a>定义 flex 子元素的宽度 flex-basis</h3><blockquote>
+<p>定义当前 flex 子元素是缩放因子&#x2F;增长因子之前的宽度，flex-basis 优先级比 width 高(覆盖)</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* auto默认值 */</span></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex-basis</span>: number | auto |inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="复合语法-flex"><a href="#复合语法-flex" class="headerlink" title="复合语法 flex"></a>复合语法 flex</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: flex-grow flex-shrink flex-basis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="排序-order"><a href="#排序-order" class="headerlink" title="排序 order"></a>排序 order</h3><blockquote>
+<p>用于改变 flex 子元素的排序位置</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="comment">/* 默认值为0，需要使用整数，值越大排列顺序越后 */</span></span><br><span class="line">  <span class="attribute">order</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/08/31/css%E8%BF%9B%E9%98%B6/flex/" data-id="clo32arfi000bt0wb3uhb8pn1" data-title="flex" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

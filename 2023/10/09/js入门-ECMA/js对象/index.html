@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>js对象 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="对象 object javaScript 所有的事物都是可以称为对象，例如 String、Number、Array、Function 等等  现实生活中能够被称为对象的例子: 汽车 就是一个对象，汽车由零件、配色、尺寸、型号等等组成，这些汽车信息都可以称为对象的属性，汽车可以拉货、载人、比赛等等可以视为对象的方法(功能) 如何创建对象 通过 new 操作符，new Object()  通过 对象字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js对象">
+<meta property="og:url" content="http://example.com/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="对象 object javaScript 所有的事物都是可以称为对象，例如 String、Number、Array、Function 等等  现实生活中能够被称为对象的例子: 汽车 就是一个对象，汽车由零件、配色、尺寸、型号等等组成，这些汽车信息都可以称为对象的属性，汽车可以拉货、载人、比赛等等可以视为对象的方法(功能) 如何创建对象 通过 new 操作符，new Object()  通过 对象字">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-09T05:23:20.000Z">
+<meta property="article:modified_time" content="2023-10-13T04:18:58.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="js ECMA">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-js入门-ECMA/js对象" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/" class="article-date">
+  <time class="dt-published" datetime="2023-10-09T05:23:20.000Z" itemprop="datePublished">2023-10-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      js对象
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="对象-object"><a href="#对象-object" class="headerlink" title="对象 object"></a>对象 object</h2><blockquote>
+<p>javaScript 所有的事物都是可以称为对象，例如 String、Number、Array、Function 等等</p>
+</blockquote>
+<p>现实生活中能够被称为对象的例子:</p>
+<p>汽车 就是一个对象，汽车由零件、配色、尺寸、型号等等组成，这些汽车信息都可以称为对象的属性，汽车可以拉货、载人、比赛等等可以视为对象的方法(功能)</p>
+<h3 id="如何创建对象"><a href="#如何创建对象" class="headerlink" title="如何创建对象"></a>如何创建对象</h3><ul>
+<li><p>通过 new 操作符，new Object()</p>
+</li>
+<li><p>通过 对象字面量{}</p>
+</li>
+</ul>
+<h3 id="操作对象的属性"><a href="#操作对象的属性" class="headerlink" title="操作对象的属性"></a>操作对象的属性</h3><ul>
+<li>通过’.’的形式，obj.属性名</li>
+<li>通过’[ ]’的形式，obj[“属性名”]</li>
+<li>通过 delete 关键字进行属性的删除,delete obj[“属性名”](delete obj.属性名)</li>
+</ul>
+<h3 id="键值对"><a href="#键值对" class="headerlink" title="键值对"></a>键值对</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    键名<span class="number">1</span>:键值,     <span class="comment">//如果键名相同，则后者会覆盖前者的键值</span></span><br><span class="line">    键名<span class="number">2</span>:键值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> car = &#123;&#125;; <span class="comment">//创建一个新的对象</span></span><br><span class="line"></span><br><span class="line">car.<span class="property">color</span> = <span class="string">&quot;red&quot;</span>;</span><br><span class="line">car.<span class="property">a</span> = <span class="string">&quot;a&quot;</span>;</span><br><span class="line">car[<span class="string">&quot;b&quot;</span>] = <span class="string">&quot;b&quot;</span>;</span><br><span class="line">car[c] = <span class="string">&quot;c&quot;</span>; <span class="comment">//c表示变量，需要加上&#x27;&#x27;或者&quot;&quot;表示字符串[&#x27;c&#x27;]，属性名是字符串</span></span><br><span class="line">car.<span class="property">fn1</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;&#125;;</span><br><span class="line">car.<span class="property">fn2</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="对象遍历方法"><a href="#对象遍历方法" class="headerlink" title="对象遍历方法"></a>对象遍历方法</h3><ul>
+<li>for…in(推荐 object 使用，array 不推荐)</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    遍历普通对象(可枚举的属性)</span><br><span class="line">    枚举:对象里面的属性可以遍历的(遍历出来)</span><br><span class="line"></span><br><span class="line">语法:</span><br><span class="line">    for(let 键名 in 对象)&#123;</span><br><span class="line">        执行代码区域</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>for…of(ES6)</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">功能:</span><br><span class="line">    支持遍历数组、字符串、类对象(dom NodeList)</span><br><span class="line"></span><br><span class="line">语法:</span><br><span class="line">    for(let 键名 of 对象)&#123;</span><br><span class="line">        执行代码区域</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="对象方法"><a href="#对象方法" class="headerlink" title="对象方法"></a>对象方法</h3><ul>
+<li><p>Object.values(对象)</p>
+<blockquote>
+<p>返回对象自身的所有可枚举属性值的数组</p>
+</blockquote>
+</li>
+<li><p>Object.keys(对象)</p>
+<blockquote>
+<p>返回对象自身的所有可枚举属性名的数组</p>
+</blockquote>
+</li>
+<li><p>Object.defineProperty</p>
+<blockquote>
+<p>直接再一个对象上定义新属性，或者修改对象现有的属性，并且返回此对象</p>
+</blockquote>
+</li>
+<li><p>Object.freeze(对象)</p>
+<blockquote>
+<p>对象被冻结，属性不可添加、修改、删除(单例模式)</p>
+</blockquote>
+</li>
+<li><p>Object.entries(对象)</p>
+<blockquote>
+<p>返回对象的可枚举字符串属性的键值对,返回值为数组</p>
+</blockquote>
+</li>
+<li><p>Object.assign(目标对象,…源对象)</p>
+<blockquote>
+<p>将一个或者多个源对象把可枚举的属性克隆到目标对象上,并返回修改之后对象，目标对象也会被修改</p>
+</blockquote>
+</li>
+<li><p>Object.create(对象)</p>
+<blockquote>
+<p>以现有的对象作为原型，创建一个新对象(新对象和原有对象是不同的)</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/" data-id="clo32argi001xt0wb6ykwfy7h" data-title="js对象" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          js系统对象
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/10/08/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AD%97%E7%AC%A6%E4%B8%B2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js字符串</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

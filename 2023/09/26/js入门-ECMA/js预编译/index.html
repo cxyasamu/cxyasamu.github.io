@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>js的预编译 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="js 的预编译 预编译分为全局预编译和函数预编译   全局预编译发生在页面加载完毕的时候  1234全局预编译的过程(三步):1.创建一个GO对象(global object);2.寻找var关键字变量声明,并赋值undefined(变量名作为GO对象属性名)3.寻找function关键字函数声明,并赋值函数体(函数名作为GO对象属性名)   函数预编译发生在函数执行的前一刻(不包括没执行的函数)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js的预编译">
+<meta property="og:url" content="http://example.com/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E9%A2%84%E7%BC%96%E8%AF%91/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="js 的预编译 预编译分为全局预编译和函数预编译   全局预编译发生在页面加载完毕的时候  1234全局预编译的过程(三步):1.创建一个GO对象(global object);2.寻找var关键字变量声明,并赋值undefined(变量名作为GO对象属性名)3.寻找function关键字函数声明,并赋值函数体(函数名作为GO对象属性名)   函数预编译发生在函数执行的前一刻(不包括没执行的函数)">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-26T02:38:20.000Z">
+<meta property="article:modified_time" content="2023-10-13T04:19:18.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="js ECMA">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-js入门-ECMA/js预编译" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E9%A2%84%E7%BC%96%E8%AF%91/" class="article-date">
+  <time class="dt-published" datetime="2023-09-26T02:38:20.000Z" itemprop="datePublished">2023-09-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/js/">js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      js的预编译
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="js-的预编译"><a href="#js-的预编译" class="headerlink" title="js 的预编译"></a>js 的预编译</h2><blockquote>
+<p>预编译分为全局预编译和函数预编译</p>
+</blockquote>
+<ul>
+<li>全局预编译发生在页面加载完毕的时候</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">全局预编译的过程(三步):</span><br><span class="line">1.创建一个GO对象(global object);</span><br><span class="line">2.寻找var关键字变量声明,并赋值undefined(变量名作为GO对象属性名)</span><br><span class="line">3.寻找function关键字函数声明,并赋值函数体(函数名作为GO对象属性名)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>函数预编译发生在函数执行的前一刻(不包括没执行的函数)</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">函数预编译的过程(四步):</span><br><span class="line">1.创建一个AO对象(activation Object)</span><br><span class="line">2.寻找函数的形参和var变量声明，将变量和形参作为AO对象的属性名，并赋值undefined</span><br><span class="line">3.将实参和形参相互统一，把形参之前的undefined值修改实参值</span><br><span class="line">4.寻找function关键字函数声明,并赋值函数体(函数名作为AO对象属性名)</span><br></pre></td></tr></table></figure>
+
+<h2 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h2><blockquote>
+<p>被作为一个实参传入另一个函数中，并且在该函数内部调用(执行),这种函数就称为回调函数(高阶函数);<br>简单理解:一个被当作参数的函数，就是回调函数</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params">cb</span>) &#123;</span><br><span class="line">  <span class="comment">// 执行cb函数</span></span><br><span class="line">  <span class="title function_">cb</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 传入参数作为实参</span></span><br><span class="line"><span class="title function_">fn</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="回调函数的作用"><a href="#回调函数的作用" class="headerlink" title="回调函数的作用"></a>回调函数的作用</h3><ul>
+<li><p>函数在某个任务完成之前不运行的，在任务完成之后立即执行，它可以帮助我们完成异步编程的代码(请求数据，ajax)</p>
+</li>
+<li><p>可以实现函数内部访问函数内部的值(执行一个函数的同时执行另一个函数)</p>
+</li>
+</ul>
+<h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><blockquote>
+<p>简单描述:函数本身调用本身</p>
+</blockquote>
+<blockquote>
+<p>递归函数(递归算法),将问题无限拆分为多个小规模问题，然后再递归调用同一个方法解决问题</p>
+</blockquote>
+<h3 id="递归的注意点"><a href="#递归的注意点" class="headerlink" title="递归的注意点"></a>递归的注意点</h3><blockquote>
+<p>每一个递归函数都需要一个终止条件(自己查找递归的规则),否则就是”死递归”(栈溢出、爆栈)</p>
+</blockquote>
+<h3 id="递归的三步走"><a href="#递归的三步走" class="headerlink" title="递归的三步走"></a>递归的三步走</h3><p>1.写出递归公式(“找到每次函数执行的结果与上一次执行结果的关系，相当于是反推计算”)</p>
+<p>2.确定终止条件(可以为多个)</p>
+<p>3.return 输出结果(和上一个结果进行操作)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E9%A2%84%E7%BC%96%E8%AF%91/" data-id="clo32argy002jt0wbhajjdlu3" data-title="js的预编译" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/26/js%E5%85%A5%E9%97%A8-ECMA/js%E6%95%B0%E7%BB%84/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          js数组
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/22/js%E5%85%A5%E9%97%A8-ECMA/js%E5%87%BD%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js函数</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/js/">js</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF/">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-DOM/" rel="tag">js DOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-ECMA/" rel="tag">js ECMA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" rel="tag">移动端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/js-DOM/" style="font-size: 10px;">js DOM</a> <a href="/tags/js-ECMA/" style="font-size: 20px;">js ECMA</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/" style="font-size: 10px;">移动端</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/13/Hexo/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/13/js-DOM/DOM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">DOM的基本操作</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/11/js%E5%85%A5%E9%97%A8-ECMA/js%E5%A0%86%E5%92%8C%E6%A0%88/">js堆和栈</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/10/js%E5%85%A5%E9%97%A8-ECMA/js%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1/">js系统对象</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/09/js%E5%85%A5%E9%97%A8-ECMA/js%E5%AF%B9%E8%B1%A1/">js对象</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
